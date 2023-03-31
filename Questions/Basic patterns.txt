@@ -1,0 +1,175 @@
+1 : NoCenterConcentric :
+package Patterns;
+import java.util.*;
+public class Concentrix {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter the Number :");
+		int n = scan.nextInt();
+		print(n);
+	}
+	private static void print(int n) {
+		int rows=2*n-1;
+		int start=0,end=rows-1;
+		int arr[][]= new int[rows][rows];
+		while(n!=0) {
+			for(int i=start;i<=end;i++) {
+				for(int j=start;j<=end;j++) {
+					if(i==start || i==end||j==start||j==end) {
+						System.out.print(arr[i][j]=n);
+					}
+				}
+				System.out.println();
+			}
+			n--;
+			start++;
+			end--;
+		}
+		for(int i=0;i<rows;i++) {
+			for(int j=0;j<rows;j++) {
+				System.out.print(arr[i][j]+" ");
+				}
+			System.out.println();
+			}
+		}
+}
+--------------------------------------------------------------------------------------------------------------
+2 : NoCenterConcentric  :
+package Patterns;
+import java.util.*;
+public class NoCenterConcentric {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter the Number");
+		int n = scan.nextInt();
+		print(n);
+	}
+	public static void print(int n) {
+		int s=n;
+		int r=n-1;
+		int limit=0;
+		int l=0;
+		int arr[][]=new int [n][n];
+		while (limit<n) {
+		for (int i=l;i<=r;i++)
+		{
+			for (int j=l;j<=r;j++)
+			{
+				if(i==l||i==r||j==l||j==r) {
+					System.out.print( arr[i][j]=n);
+			}
+				
+			}
+			System.out.println();
+		
+		}
+		l++;n--;r--;limit++;
+	}
+	for (int i=0;i<s;i++) {
+		for(int j=0;j<s;j++) {
+			System.out.print(arr[i][j]);
+	
+	}
+		System.out.println();
+	}
+	}
+
+}
+-----------------------------------------------------------------------------------------
+3 : Snail :
+package Patterns;
+import java.util.*;
+public class Snail {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter the number of rows :");
+		int row = scan.nextInt();
+		System.out.println("Enter the number of columns :");
+		int col= scan.nextInt();
+		
+		int arr[][]=new int[row][col];
+		System.out.println("Enter the Array Elements :");
+		for(int i=0;i<row;i++) {
+			for(int j=0;j<col;j++) {
+				arr[i][j]=scan.nextInt();
+			}
+		}
+		print1(arr);
+		
+	}
+	public static void print1(int arr[][]) {
+		int colstart=0;
+		int colend=arr[0].length;
+		int rowstart=0;
+		int rowend=arr.length;
+		
+		while(rowstart<rowend && colstart<colend) {
+			
+			for(int i=colstart;i<colend;i++) {
+				System.out.print(arr[rowstart][i]+" ");
+			}
+			rowstart+=1;
+			for(int i=rowstart;i<rowend;i++) {
+				System.out.print(arr[i][colend-1]+" ");
+			}
+			colend-=1;
+			for(int i=colend-1;i>=colstart;i--) {
+				System.out.print(arr[rowend-1][i]+" ");
+			}
+			rowend-=1;
+			for(int i=rowend-1;i>=rowstart;i--) {
+				System.out.print(arr[i][colstart]+" ");
+			}
+			colstart+=1;		
+		}
+	}
+}
+--------------------------------------------------------------------------------------------
+4 : X-Pattern :
+package Patterns;
+import java.util.*;
+public class XPattern {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter the Size :");
+		int n = scan.nextInt();
+		print(n);
+		System.out.println();
+		print1(n);
+		
+	}
+	public static void print(int n) {
+		for(int i=0;i<n;i++) {
+			for(int j=0;j<n;j++) {
+				if(i==j) {
+					System.out.print((j+1)+" ");
+				}
+				else if(n==i+j+1) {
+					System.out.print((i+1)+" ");
+				}
+				else {
+					System.out.print("  ");
+				}
+			}
+			System.out.println();
+		}
+	}
+	public static void print1(int n) {
+		for(int i=0;i<n;i++) {
+			for(int j=0;j<n;j++) {
+				if(i==j) {
+					System.out.print((i+1)+" ");
+				}
+				else if(n==i+j+1) {
+					System.out.print((j+1)+" ");
+				}
+				else {
+					System.out.print("  ");
+				}
+			}
+			System.out.println();
+		}
+	}
+
+}
+---------------------------------------------------------------------------------------
