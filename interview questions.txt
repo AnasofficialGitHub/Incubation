@@ -1,0 +1,42 @@
+1. What is a abstract class ?
+	A special class which defines abstract method's and non-abstract methods.  this class is generally the parent class and brings in 
+	1. kind of relationship
+	2. defines abstract method's to be implemented by the child classes.
+
+2. What is a interface?
+	1. A special class whose activity is promised by the class which implements it.
+
+3. What is a Thread?
+	1.  A task with in a task, a lightweight process.
+
+4. What is Polymorphism?
+	One object performing many tasks or jobs.
+
+5. What is Abstraction?
+	Its a phenomenon to expose the object's functionalities
+6. What is Dynamic method invocation?
+	In case of method overriding and overloading, the correct methods are identified and executed, this is Dynamic method invocation.
+7. What is exception handling?
+	Handling abnormal conditions in a java program.
+8. What are the different layouts in swing.
+	FlowLayout, border layout, grid layout, gridbag layout
+	
+10. Define list collection, set and Map collection
+	These are collections defined in the util package.
+
+11. Difference between vector and list.
+	Methods in vector class are synchronized.
+
+
+14. What are access modifiers
+	static, final etc
+15. what is garbage collection
+	java cleans the objects from memory automatically - this cleaning is Garbage collection
+16. What is a servlet	
+	Servlet is a middleware, to produce dynamic contents at the client side.
+17. jdbc drivers i
+	jdbc has four drivers - jdbc-odbc, partly java-partly native, net , and thin driver.
+18. statement and prepared statement
+	prepared statement is precompiled and used for dynamic queries and statement is for static quries.
+19. session management
+	http is stateless, so we need session to store the client transactions in session for session management.

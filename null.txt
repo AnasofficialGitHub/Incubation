@@ -1,0 +1,268 @@
+package loosecoupling;
+
+import java.io.FileInputStream;
+import java.util.Properties;
+
+public class LooseCoupleDemo {
+	public static void main(String[] args)throws Exception {
+		PaintBrushV4 brush=new PaintBrushV4();
+		Water water=new ColorWater();
+		
+		//brush.doPaint(water);
+		
+		PaintBrushV5<Water> brush5=new PaintBrushV5<Water>();
+		//brush5.setObj(water);
+		brush5 = WaterContainer.getBrush(brush5);
+		Water w=brush5.getObj();
+		System.out.println(w);
+		
+		PaintBrushV5<Paint> brush6=new PaintBrushV5<>();
+		//brush6.setObj(new RedPaint());
+		brush6=PaintContainer.getBrush(brush6);
+		Paint p=brush6.getObj();
+		p.color();
+	}
+}
+
+class PaintContainer{
+	public static PaintBrushV5<Paint> getBrush(PaintBrushV5<Paint> brush) throws Exception{
+		Properties prop=new Properties();
+		prop.load(new FileInputStream("config.properties"));
+		String paintclass=prop.getProperty("paint");
+		//Paint paint=new RedPaint();//tight coupling
+		Paint paint=(Paint)Class.forName(paintclass).getConstructor().newInstance();
+		brush.setObj(paint);
+		return brush;
+	}
+}
+class WaterContainer{
+public static PaintBrushV5<Water> getBrush(PaintBrushV5<Water> brush)throws Exception {
+	Properties prop=new Properties();
+	prop.load(new FileInputStream("config.properties"));
+	String waterclass=prop.getProperty("water");
+	//Paint paint=new RedPaint();//tight coupling
+	Water water=(Water)Class.forName(waterclass).getConstructor().newInstance();
+	brush.setObj(water);
+	return brush;
+	}
+}
+class PaintBrushV1{
+	public void doPaint(int i) {
+		if(i==1) {
+			System.out.println("red paint...");
+		}
+		else if(i==2) {
+			System.out.println("blue paint...");
+		}
+	}
+}
+//using overloading - brings open close - closed for modification and open for extension
+abstract class Paint{
+	public final void sticky() {System.out.println("sticky...");}
+	public abstract void color();
+}
+class RedPaint extends Paint{
+	public RedPaint() {
+		// TODO Auto-generated constructor stub
+	}
+	@Override
+	public void color() {
+		System.out.println("red color...");
+	}
+}
+class BluePaint extends Paint{
+	public BluePaint() {
+		// TODO Auto-generated constructor stub
+	}
+	@Override
+	public void color() {
+		System.out.println("blue color....");
+	}
+}
+abstract class Water{
+	
+}
+class ColorWater extends Water{
+	public ColorWater() {
+		// TODO Auto-generated constructor stub
+	}
+}
+class PaintBrushV2{
+	public void doPaint(RedPaint rp) {
+		
+	}
+	public void doPaint(BluePaint bp) {
+		
+	}
+}
+//using inheritance
+class PaintBrushV3{
+	
+	public void doPaint(Paint p) {
+		p.color();
+	}
+}
+
+//using object
+class PaintBrushV4{
+	public void doPaint(Object obj) {
+		Paint paint=(Paint)obj;
+		paint.color();
+	}
+}
+
+//using generics
+class PaintBrushV5<T>{
+	private T obj;
+	public T getObj() {
+		return obj;
+	}
+	public void setObj(T obj) {
+		this.obj=obj;
+	}
+}
+-----------------------------------------------------------------------------------------------------------
+Config File:
+paint=loosecoupling.BluePaint
+
+water=loosecoupling.ColorWater
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+package loosecoupling;
+
+public class ClassDemo {
+	public static void main(String[] args) throws Exception{
+		Demo obj1=new Demo();//static - tight coupling  - this is fast
+		
+		//dynamic and loosely coupled
+		Demo obj2=(Demo)Class.forName("loosecoupling.Demo").getConstructor().newInstance();
+		
+		Demo obj3=(Demo)Class.forName("loosecoupling.Demo").
+				getConstructor(String.class,int.class).newInstance("aa",10);
+		
+		Demo obj4=(Demo)Class.forName("loosecoupling.Demo").
+				getConstructor(Sample.class,String.class).newInstance(new Sample(),"aa");
+		
+		
+		
+	}
+}
+
+class Demo{
+	public Demo() {
+		// TODO Auto-generated constructor stub
+	}
+	public Demo(String s,int i) {
+		// TODO Auto-generated constructor stub
+	}
+	public Demo(Sample s,String str) {
+		
+	}
+}
+class Sample{}
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+package loosecoupling;
+
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+
+public class ClassDemo2 {
+	public static void main(String[] args)throws Exception {
+		Politician ramu=new Politician();
+		PoliceStation p1=new PoliceStation();
+		p1.arrest(ramu);
+	}	
+}
+class Politician{
+	private String secretName="gunda";
+	public String name="holy man";
+	
+	private void secretService() {
+		System.out.println("nasama pova....");
+	}
+	public void publicService(String s) {
+		System.out.println("holy service.....");
+	}
+}
+
+class ThiruttuTeacher{}
+class PoliceStation<T>{
+	public void arrest(T suspect) throws Exception{
+		Class c=suspect.getClass();
+		//interrogation / introspection
+		Field f= c.getField("name");
+		System.out.println(f.get(suspect));
+		Method m=c.getMethod("publicService",String.class);
+		m.invoke(suspect,"hello");
+		
+		//torture room
+		f= c.getDeclaredField("secretName");
+		f.setAccessible(true);
+		System.out.println(f.get(suspect));
+		
+		m=c.getDeclaredMethod("secretService");
+		m.setAccessible(true);
+		m.invoke(suspect);
+			
+	}
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+package loosecoupling;
+
+public class AdapterPattern {
+	public static void main(String[] args) {
+		IndianSocket ic=new ShakthiSocket();
+		
+		///IndianPlug ip=new ShakthiPlug();
+		
+		AmericanPlug ap=new LenovoPlug();
+		
+		IndianAdapter adapter=new IndianAdapter();
+		adapter.ap=ap;
+		
+		ic.roundPinHole(adapter);
+	}
+}
+class IndianAdapter extends IndianPlug{
+	AmericanPlug ap;
+	@Override
+	public void roundPin() {
+		ap.slabPin();
+	}
+}
+
+
+
+abstract class IndianPlug{
+	public abstract void roundPin();
+}
+abstract class IndianSocket{
+	public abstract void roundPinHole(IndianPlug ip);
+}
+
+abstract class AmericanPlug{
+	public abstract void slabPin();
+}
+abstract class AmericanSocket{
+	public abstract void slabPinSocket(AmericanPlug sp);
+}
+class ShakthiPlug extends IndianPlug{
+	@Override
+	public void roundPin() {
+		System.out.println("indian plug working....");
+	}
+}
+class ShakthiSocket extends IndianSocket{
+	@Override
+	public void roundPinHole(IndianPlug ip) {
+		ip.roundPin();
+	}
+}
+
+class LenovoPlug extends AmericanPlug{
+	@Override
+	public void slabPin() {
+		System.out.println("slab pin working...");
+	}
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+

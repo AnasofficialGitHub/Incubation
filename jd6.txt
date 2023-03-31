@@ -1,0 +1,592 @@
+
+
+ QUESTIONS :-
+ 
+1.Which statement about the garbage collection mechanism are true?
+        A.Garbage collection require additional programe code in cases where 
+multiple threads are running.
+        B.The programmer can indicate that a referance through a local 
+variable is no longer of interest.
+        C.The programmer has a mechanism that explicity and immediately frees 
+the memory used by Java objects.
+        D.The garbage collection mechanism can free the memory used by Java 
+Object at explection time.
+        E.The garbage collection system never reclaims memory from objects 
+while are still accessible to running user thread.
+
+
+2.Give the following method:     
+        1)           public void method(){
+        2)              String a,b;
+        3)              a=new String("hello world");
+        4)              b=new String("game over");
+        5)              System.out.println(a+b+"ok");
+        6)              a=null;      
+        7)              a=b;
+        8)              System.out.println(a);  
+        9)              }
+In the absence of compiler optimization,which line is the earliest point the 
+object a refered is definitely elibile to be garbage collected?
+        A.3             B.5             C.6             D.7             E.9
+
+
+3.In the class java.awt.AWTEvent,which is the parent class upon which jdk1.1 
+awt events are based there is a method called getID(),
+  which phrase most accerrately describes in significance of the reture value 
+of this method?
+        A.It is a reference to the object directly affected by the cause of 
+the event.
+        B.It is an indication of the nature of the cause of the event.
+        C.It is an indication of the position of the mouse when it caused the 
+event.
+        D.In the case of a mouse click,it is an indication of the text under 
+the mouse at the time of the event.
+        E.It tells the state of certain keys on the keybord at the time of 
+the event.
+        F.It is an indication of the time at which the event occurred.
+
+
+
+
+4. Which statement about listener is true?
+        A.Most component allow multiple listeners to be added.
+        B.If mutiple listener be add to a single component,the event only 
+affected one listener.
+        C.Component don't allow multiple listeners to be add.
+        D.The listener mechanism allows you to call an addListener method as 
+many times as is needed,specifying as many different listeners as your design 
+requires.
+
+
+
+
+5.Give the following code:        public class Example{
+                public static void main(String args[]){
+                        int I=0;  
+                      do{
+                                System.out.println("Doing it for I is:"+ I );
+                        }while(--i);
+                        System.out.println("Finish");                }        
+}
+        Which  will be output:
+        A.Doing it for I is 3           B.Doing it for I is 1   C.Doing it 
+for I is 2
+        D.Doing it for I is 0           E.Doing if for I is -1  F.Finish
+
+
+
+
+6.Give the code fragment: 
+        1)      switch(x){
+        2)              case 1: System.out.println("Test 1"); break;
+        3)              case 2:
+        4)              case 3:System.out.println("Test 2"); break;
+        5)              default: System.out.println("end");
+        6)              }which value of x would cause "Test 2" to the output:
+        A.1             B.2             C.3             D.default
+
+
+
+7.Give incompleted method:        1)                      
+        2)      {       if(unsafe()) {//do something...}
+        3)              else if(safe()){//do the other...}        4}      }
+The method unsafe() will throw an IOException,which completes the method of 
+declaration when added at line one?
+        A.public IOException methodName()        B.public void methodName()
+        C.public void methodName() throw IOException
+        D.public void methodName() throws IOException
+        F.public void methodName() throws Exception8.Give the code fragment:
+
+
+
+
+8.   if(x>4){                System.out.println("Test 1");}
+                else if(x>9) {
+                        System.out.println("Test 2");}                else {
+                        System.out.println("Test 3");}
+Which range of value of x would produce of output "Test 2"?
+        A.x<4           B.x>4           C.x>9   D.None
+
+
+
+9.Give the following method: 
+       public void example(){    
+            try{
+                        unsafe();
+                        System.out.println("Test 1");
+                }catch(SafeException e){System.out.println("Test 2");
+                }finally{System.out.println("Test 3");}
+                System.out.println("Test 4");        }
+Which will display if method unsafe() run normally?
+        A.Test 1                B.Test 2                C.Test 3                
+D.Test 4
+
+
+
+10.Which method you define as the starting point of new thread in a class 
+from which new the thread can be excution?
+        A.public void start()           B.public void run()             
+C.public void int()   
+        D.public static void main(String args[])                E.public void 
+runnable()
+
+
+
+
+11.What wight cause the current thread to stop excutings?
+        A.thread of higher priority become ready.  
+        B.method sleep() be called.
+        C.method stop() be called               D.method suspend() be called.
+        E.method wait() be called               
+12.Which modifier should be applied to a method for the lock of object this 
+to be obtained prior to excution any of the mehod body?
+        A.synchronized          B.abstract              C.final D.static        
+E.public 
+
+
+
+
+13.The following code is entire contents of  a file called 
+Example.java,causes precisely one error during compilation:
+        1)      class SubClass extends BaseClass{        2)              }
+        3)      class BaseClass{        4)              String str;
+        5)              public BaseClass(){
+        6)                      System.out.println("ok");}
+        7)              public BaseClass(String s){
+        8)                      str=s;
+        9)                      public class Example{
+        10)                             public void method(){
+        11)                                     SubClass s=new 
+SubClass("hello");
+        12)                                     BaseClass b=new 
+BaseClass("world");
+        13)                             }        14)                     }
+        15)             }        16)     }
+Which line would be cause the error? A.9        B.10            C.11            
+D.12
+
+
+
+14.Which statement is correctly declare a variable a which is suitable for 
+refering to an array of 30 string empty object?
+        A.String []a            B.String a[]            D.char a[][]            
+E.String a[50]   F.Object a[50]
+
+
+
+15.Give the following java sourse fragement:        //point x
+        public class Interesting{                //do something        }
+which statement is correctly Java syntax ant point x?
+        A.import java.awt.*;            B.package mypackage             
+C.static int PI=3.14
+        D.public class MyClass{//do other thing...}             E.class 
+MyClass{//do something...}
+
+
+
+16.Give this class outline:        class Example{                private int 
+x;
+        //rest of class body...        }
+Assuming that x invoked by the code java Example,which statement can made 
+this.x be accessible in main() method of Example.java:
+        A.Change private int x to public int x  B.change private int x to 
+static int x 
+        C.Change private int x to protected int x D.change private int x to 
+final int x
+
+
+
+
+
+17.The piece of preliminary analsis work describes a class that will be used 
+frequently in many unrelated parts of a project:
+        "The polygon object is a drawable,A polygon has vertex information 
+stored in a vector,a color,
+length and width."Which Data type would be used?
+        A.Vector                B.int           C.String                
+D.Color         E.Date
+
+
+
+
+18.A class design requires that a member variable should be accessible only 
+by same package,which modifer word should be used:
+        A.protected             B.public                C.no modifer    
+D.private
+
+19.Which declares for a native method in a java class corrected?
+        A.public native void method(){ }   
+        B.public native void method();
+        C.public native method();               D.public void 
+method(){native;}
+        E.public void native method();
+
+
+20.Which modifer should be applied to a declaration of a class member 
+variable for the value of variable to remain constant after the creation of 
+the object?(short answer)
+
+
+
+21.Which is the main() method's return of a application?
+        A.String                B.byte          C.char          D.void
+
+
+
+22.Which is corrected argument of main() method of a applicaton?
+        A.String args   B.String ar[]   C.Char args[][]         
+D.StringBuffer arg[]
+
+
+
+
+23."The Employee object is a person,An Employee has appointment store in a 
+vector,a hire date and a number of dependents."
+        short anwser:use shortest statement define a class of Employee.
+
+
+
+24.Give the following  class defination inseparate source files:
+        public class Example{                public Example(){//do something}
+                protected  Example(){// do  something}
+                protected  void method(){//do something}        }
+        public class Hello extends Example{// member method and member 
+variable}
+Which methods are corrected added to the class Hello?
+        A.public void Example(){}       B.public void method(){}        
+C.protected void        method(){}      D.private void method()         
+E.private otherMethod(){}
+
+
+
+25.     Float s=new Float(0.9F);        Float t=new Float(0.9F);
+        Double u=new Double(0.9);Which expression's result is true?
+        A.s==t;         B.s.equal(t);           C.s==u          D.t.equal(u)
+
+
+
+
+
+
+
+
+26.Give following class:        class   AClass{                private long 
+val;
+                public AClass(long v){val=v;}
+                public static void main(String args[]){
+                        AClass x=new AClass(10L);
+                        AClass y=new AClass(10L);
+                        AClass z=y;           
+                        long a=10L;
+                        int b=10;                }        }
+Which expression's result is true?
+        A.a= =b;                B.a= =x;                C.y= =z;        D.x= 
+=y;        
+        E.a= =10.0;
+
+
+
+27.A socket object has been created and connected to a standard internet 
+sevice on a remote network server.Which construction give the most suitable 
+means for reading ASCII data one line at a time from the socket?
+        A.InputStream in=s.getInputStream();
+        B.DataInputStream in=new DataInputstream(s.getInputStream());
+        C.ByteArrayInputStream in=new 
+ByteArrayInputStream(s.getInputStream());
+        D.BufferedReader in=new  BufferedReader(new 
+InputStreamReader(s.getInputStream()));
+        E.BufferedReader in=new  BufferedReader(new 
+InputStreamReader(s.getInputStream()),"8859-1");
+
+
+
+
+28.String s="Example String";     Which operation is legal?
+        A.s>>>=3;               B.int =s.length();              C.s[3]="x";
+        D.String short s=s.trim();                              E.String 
+t="root"+s;
+
+
+
+ 29.Give: String str="goodby";        Which operation is legal?
+        A.char c=s[3];          B.int i=s.length();             C.s>>=2;
+        D.String lower s=s.toLowerCase();                       E.s+="long 
+
+ago";
+
+
+
+
+
+30.What use to position a Button in a Frame,width of Button is affected by 
+the Frame size,which Layout Button will be set to?
+        A.FlowLayout;           B.GridLayout;           C.North of 
+BorderLayout 
+        D.South of BorderLayout                 D.Ease or West of 
+BorderLayout
+
+
+
+31.What use to position a Button in a Frame,size of Button is not  affected 
+by the Frame size,which Layout Button will be set to?
+        A.FlowLayout;           B.GridLayout;           C.North of 
+BorderLayout 
+        D.South of BorderLayout                 D.Ease or West of 
+BorderLayout
+
+
+
+
+32.An AWT GUI under exposure condition,which one or more method will be invok 
+when it redraw?
+        A.paint();      B.update();     C.repaint();    D.drawing();
+
+
+
+
+33.Select valid identifier of Java:
+        A.userName      B.%passwd       C.3d_game       D.$charge       
+E.this  
+
+
+
+
+34.Which are Java keyword?
+        A.goto          B.null          C.FALSE D.native                
+E.const
+
+
+
+
+35.Run a corrected class:java -cs AClass a b c 
+    Which statement is true?
+        A.args[0]="-cs";                B.args[1]="a b c";      
+C.args[0]="java";       
+        D.args[0]="a";          E.args[1]='b';36.Give the following java 
+class:
+        public class Example{                static int x[]=new int[15];
+                public static void main(String args[]){
+                        System.out.println(x[5]);                }        }
+Which statement is corrected?   
+        A.When compile,some error will occur.
+        B.When run,some error will occur.        C.Output is zearo.
+        D.Output is null.37.Give the following java class:
+        public class Example{
+                public static void main(String args[]){
+                        static int x[]=new int[15];
+                        System.out.println(x[5]);                }        }
+Which statement is corrected?        A.When compile,some error will occur.
+        B.When run,some error will occur.        C.Output is zearo.
+        D.Output is null.38. Short answer:
+        The decimal value of i is 12,the octal i value is:39.short answer:
+        The decimal value of i is 7,the hexadecimal is:
+
+
+
+
+40.Which is the range of char?
+        A.2-7~27-1              B.0~216-1       C.0~216         D.0~28
+
+
+
+41.Which is the range of int type?
+        A.2-16~2 16-1           B.2-31~ 2 31-1          C.2-32~2 32-1           
+D.2-64~2        64-1
+
+
+
+
+42.Give the following class:        public class Example{
+                String str=new String("good");
+                char ch[]={'a','b','c'};
+                public static void main(String args[]){
+                        Example ex=new Example();
+                        ex.change(ex.str,ex.ch);
+                        System.out.println(ex.str+" and "+ex.ch);                       
+                }                public void change(String str,char ch[]){
+                        str="test ok";ch[0]="g";                        }
+        }        Which is the output:
+        A.good and abc          B.good  and gbc         C.test ok and abc       
+D.test ok and gbc
+
+
+
+
+43.Which code fragments would correctly identify the number of arguments 
+passed via 
+   command line to a Javaapplication, excluding the name of the class that is 
+being invoked?
+        A.int count = args.length;      B.int count = args.length - l; 
+        C.int count=0; while (args [count] !=null)
+                                 count ++;             D.int count=0; while
+                                 (!(args[count].equals(""))) count ++; 
+
+
+
+44.FilterOutputStream is the parent class for BufferedOutputStream, 
+DataOutputStream and
+   PrintStream. Which classes are a valid argument for the  constructor of a 
+FilterOutputStream?                         
+            A.InputStream                B.OutputStream  C.File 
+            D.RandomAccessFile           E.StreamTokenizer 
+
+
+
+
+45.Given a TextArea using a proportional pitch font and constructed like 
+this:
+      TextArea t = new TextArea("12345", 5, 5); 
+        Which statement is true?         
+            A.the displayed width shows exactly five characters one ach line 
+unless otherwise constrained 
+            B.The displayed height is five lines unless otherwise 
+constrained. 
+            C.The maximum number of characters in a line will be five. 
+            D.The user will be able to edit the character string            
+            E.The displayed string can use multiple fonts
+
+
+
+46.Given a TextArea using a proportional pitch font and constructed like 
+this:
+        List l=new List(5,true);        Which statement is true?         
+            A.the displayed item exactly five line unless otherwise 
+constrained 
+            B.The displayed item is five lines init.but can displayed more 
+than five Item by                               
+            C.The maximum number of item in a list will be  five.
+            D.The list is  multiple mode                                                     
+            47.Given this skeleton of a class currently under construction:
+         public class Example {                     int x, y,z;
+                     public Example(int a,int b) {
+                                //lots of complex computation
+                         x=a;y=b;                            }
+                       public Example(int a, int b,int c) {
+                          // do everything the same as single argument
+                          // version of constructor
+                          //including assignment x = a,y=b
+                         z=c;                          }                    }
+      
+           What is the most concise way to code the "do everything..."part of 
+the constructor taking two arguments? (short answer)
+                                                                       
+ 
+
+
+
+48.Which correctly create a two dimensional array of integers?
+                              A.int a[][] = new int[10,10] 
+                              B.int a[10][10] = new int[][]; 
+                              C.int a[][] = new int [10][10]; 
+                              D.int []a[] = new int [10][10]; 
+                              E.int []a[] = new int[10][10]; 
+
+
+
+
+
+49.Which are correct class declarations? Assume in each case that the text 
+constitutes the entire contents of a file called Fred.java on a system with a 
+case-significant file system. 
+                              A.public class Fred {
+                                   public int x = 0;
+                                   public Fred (int x) {
+                                     this.x = x;
+                                   }                                 }
+                              B.public class fred 
+                                   public int x = 0;
+                                   public fred (int x) {
+                                     this.x = x;
+                                   }                                 }
+                              C.public class Fred extends MyBaseClass, 
+MyOtherBaseClass {
+                                   public int x = 0;
+                                   public Fred (int xval) {
+                                     x = xval;
+                                   }                                 }
+                              D.protected class Fred {
+                                   private int x = 0;
+                                   private Fred (int xval) {
+                                     x = xval;
+                                   }                                 }
+                             E.import java.awt.*;
+                                 public class Fred extends Object {
+                                   int x;
+                                   private Fred (int xval) {
+                                     x = xval;
+                                   }                                 }
+ 50.A class design requires that a particular member variable must be 
+accessible for direct access by any subclasses of  this class, but otherwise 
+not by classes which are not  members of the same package. What should be 
+done to achieve this? 
+        A.The variable should be marked public 
+        B.The variable should be marked private 
+        C.The variable should be marked protected 
+        D.The variable should have no special access modifier 
+        E.The variable should be marked private and an  accessor method 
+provided
+                                 
+51.Which correctly create an array of five empty Strings? 
+                              A.String a [] = new String [5];
+                                 for (int i = 0; i < 5; a[i++] = "");
+                              B.String a [] = {"", "", "", "", ""};
+                              C.String a [5]; 
+                              D.String [5] a; 
+                              E.String [] a = new String [5];
+                                 for (int i = 0; i < 5; a[i++] = null);
+52.Which cannot be added to a Container? 
+        A.an Applet             B.a Component 
+        C.a Container           D.a MenuComponent      E.a panel
+53.Which is the return value of Event listener's method?
+        A.String        B.AWTEvent      C.void          D.int
+54.If we implements MouseEventListener,which is corrected argument of it's 
+method?(short answer)
+55.Use the oprator ">>" and ">>>".Which statement is true?
+        A.1010 0000 0000 0000 0000 0000 0000 0000>>4 give
+            0000 1010 0000 0000 0000 0000 0000 0000
+        B.1010 0000 0000 0000 0000 0000 0000 0000>>4 give
+            1111 1010 0000 0000 0000 0000 0000 0000
+        A.1010 0000 0000 0000 0000 0000 0000 0000>>>4 give
+            0000 1010 0000 0000 0000 0000 0000 0000
+        A.1010 0000 0000 0000 0000 0000 0000 0000>>>4 give
+            1111 1010 0000 0000 0000 0000 0000 000056.
+56. Give following fragment.
+        outer:for(int i=0;i<3;i++)  
+             inner:for(int j=0;j<3;j++){
+                        if(j>1) break outer;
+                        System.out.println(j+"and"+i);                }
+        Which will be output?
+        A.0 and 0       B.0 and 1       C.0 and 2       D.0 and 3
+        E.1 and 0       F.1 and 1       G.1 and 2       H.1 and 3
+        I.2 and 0       J.2 and 1       K.2 and 2       L.2 and 3
+57.FilterInputStream is the parent class for BufferedInputStream, 
+DataInputStream and                            PrintStream. Which classes are 
+a valid argument for the  constructor of a FilterOutputStream?                         
+        A.InputStream           B.OutputStream  C.File 
+        D.RandomAccessFile      E.StreamTokenizer 
+58.Which is the main()method return?
+        A.String        B.void          C.char          D.int
+59.Look the inheritance ralation:                 
+                          person
+                            | 
+                        |       |       
+                       man    woman
+In a sourse of java have the following line:        person p=new man();
+What statement are corrected?   
+        A.The expression is illegal.
+        B.Compile corrected but running wrong. 
+        C.The expression is legal.
+        D.Will construct a person's object.60.
+60.Look the inheritance ralation:
+                        person
+                           |
+                      |       |      
+                     man     woman
+In a sourse of java have the following line:        woman w=new man();
+What statement are corrected?     
+        A.The expression is illegal.
+        B.Compile corrected but running wrong. 
+        C.The expression is legal.
+        D.Will construct a woman's object.
+
+

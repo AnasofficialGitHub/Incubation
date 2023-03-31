@@ -1,0 +1,738 @@
+
+Total Question 35
+Min: Duration: 1 Hr 
+***Some questions may have multiple answers
+
+Questions
+
+Question 1) 
+What will happen when you attempt to compile and run this code?
+abstract class Base{
+        abstract public void myfunc();
+        public void another(){
+        System.out.println("Another method");
+        }
+}
+public class Abs extends Base{
+        public static void main(String argv[]){
+        Abs a = new Abs();
+        a.amethod();
+        }
+        public void myfunc(){
+                System.out.println("My func");
+                } 
+        public void amethod(){
+        myfunc();
+        
+        }
+}
+1) The code will compile and run, printing out the words "My Func"
+2) The compiler will complain that the Base class has non abstract methods
+3) The code will compile but complain at run time that the Base class has non abstract methods
+4) The compiler will complain that the method myfunc in the base class has no body, nobody at all to looove it
+
+
+
+Question 2) 
+
+What will happen when you attempt to compile and run this code? 
+public class MyMain{
+public static void main(String argv){
+        System.out.println("Hello cruel world");
+        }
+}
+1) The compiler will complain that main is a reserved word and cannot be used for a class
+2) The code will compile and when run will print out "Hello cruel world"
+3) The code will compile but will complain at run time that no constructor is defined
+4) The code will compile but will complain at run time that main is not correctly defined
+
+
+Question 3) 
+Which of the following are Java modifiers?
+
+1) public
+2) private
+3) friendly
+4) transient
+4) vagrant
+
+
+Question 4)
+What will happen when you attempt to compile and run this code?
+class Base{
+        abstract public void myfunc();
+        public void another(){
+        System.out.println("Another method");
+        }
+}
+public class Abs extends Base{
+        public static void main(String argv[]){
+        Abs a = new Abs();
+        a.amethod();
+        }
+        public void myfunc(){
+                System.out.println("My func");
+                } 
+        public void amethod(){
+        myfunc();
+        
+        }
+}
+1) The code will compile and run, printing out the words "My Func"
+2) The compiler will complain that the Base class is not declared as abstract.
+3) The code will compile but complain at run time that the Base class has non abstract methods
+4) The compiler will complain that the method myfunc in the base class has no body, nobody at all to looove it
+
+
+Question 5)
+Why might you define a method as native?
+1) To get to access hardware that Java does not know about
+2) To define a new data type such as an unsigned integer
+3) To write optimised code for performance in a language such as C/C++
+4) To overcome the limitation of the private scope of a method
+
+
+Question 6)
+What will happen when you attempt to compile and run this code?
+class Base{
+public final void amethod(){
+        System.out.println("amethod");
+        }
+}
+public class Fin extends Base{
+public static void main(String argv[]){
+        Base b = new Base();
+        b.amethod();
+        }
+}
+1) Compile time error indicating that a class with any final methods must be declared final itself
+2) Compile time error indicating that you cannot inherit from a class with final methods
+3) Run time error indicating that Base is not defined as final
+4) Success in compilation and output of "amethod" at run time.
+
+
+7) What will happen when you attempt to compile and run this code?
+public class Mod{
+public static void main(String argv[]){
+    }
+        public static native void amethod();
+}
+1) Error at compilation: native method cannot be static
+2) Error at compilation native method must return value
+3) Compilation but error at run time unless you have made code containing native amethod available
+4) Compilation and execution without error
+
+
+8) What will happen when you attempt to compile and run this code?
+private class Base{}
+public class Vis{
+	transient int  iVal;
+	public static void main(String elephant[]){
+        }
+}
+1)Compile time error: Base cannot be private
+2)Compile time error indicating that an integer cannot be transient
+3)Compile time error transient not a data type
+4)Compile time error malformed main method
+
+
+
+9) What happens when you attempt to compile and run these two files in the same directory? 
+//File P1.java
+package MyPackage;
+class P1{
+void afancymethod(){
+        System.out.println("What a fancy method");
+        }
+}
+//File P2.java
+public class P2 extends P1{
+afancymethod();
+}
+1) Both compile and P2 outputs "What a fancy method" when run
+2) Neither will compile
+3) Both compile but P2 has an error at run time
+4) P1 compiles cleanly but P2 has an error at compile time
+
+
+10) You want to find out the value of the last element of an array. You write the following code. What will happen when you compile and run it.?
+public class MyAr{
+public static void main(String argv[]){
+        int[] i = new int[5];
+        System.out.println(i[5]);
+        }
+}
+1) An error at compile time
+2) An error at run time
+3) The value 0 will be output
+4) The string "null" will be output
+
+
+11) You want to loop through an array and stop when you come to the last element. Being a good java programmer and forgetting everything you ever knew about C/C++ you know that arrays contain information about their size. Which of the following can you use?
+
+1)myarray.length();
+2)myarray.length;
+3)myarray.size
+4)myarray.size();
+
+
+Question 12)
+What best describes the appearance of an application with the following code?
+import java.awt.*;
+
+public class FlowAp extends Frame{
+
+public static void main(String argv[]){
+    FlowAp fa=new FlowAp();
+    fa.setSize(400,300);
+    fa.setVisible(true);
+}
+FlowAp(){
+        add(new Button("One"));
+        add(new Button("Two"));
+        add(new Button("Three"));
+        add(new Button("Four"));
+    }//End of constructor
+
+}//End of Application
+1) A Frame with buttons marked One to Four placed on each edge.
+2) A Frame with buutons marked One to four running from the top to bottom
+3) A Frame with one large button marked Four in the Centre
+4) An Error at run time indicating you have not set a LayoutManager
+
+
+Question 13)
+How do you indicate where a component will be positioned using Flowlayout?
+1) North, South,East,West
+2) Assign a row/column grid reference
+3) Pass a X/Y percentage parameter to the add method
+4) Do nothing, the FlowLayout will position the component
+
+
+
+Question 14)
+How do you change the current layout manager for a container
+1) Use the setLayout method
+2) Once created you cannot change the current layout manager of a component
+3) Use the setLayoutManager method
+4) Use the updateLayout method
+
+
+Question 16) 
+What most closely matches the appearance when this code runs?
+import java.awt.*;
+
+public class CompLay extends Frame{
+public static void main(String argv[]){
+    CompLay cl = new CompLay();
+    }
+
+CompLay(){
+    Panel p = new Panel();
+    p.setBackground(Color.pink);
+    p.add(new Button("One"));
+    p.add(new Button("Two"));
+    p.add(new Button("Three"));
+    add("South",p);
+    setLayout(new FlowLayout());
+    setSize(300,300);
+    setVisible(true);
+    }
+}
+1) The buttons will run from left to right along the bottom of the Frame
+2) The buttons will run from left to right along the top of the frame
+3) The buttons will not be displayed
+4) Only button three will show occupying all of the frame
+
+Question 18)
+What will happen when you attempt to compile and run the following code?
+public class Bground extends Thread{
+
+public static void main(String argv[]){
+	        Bground b = new Bground();
+        	b.run();
+        }
+        public void start(){
+        	for (int i = 0; i <10; i++){
+                	System.out.println("Value of i = " + i);
+                }
+        }
+
+}
+1) A compile time error indicating that no run method is defined for the Thread class
+2) A run time error indicating that no run method is defined for the Thread class
+3) Clean compile and at run time the values 0 to 9 are printed out
+4) Clean compile but no output at runtime
+
+Question 21)
+How does the set collection deal with duplicate elements?
+1) An exception is thrown if you attempt to add an element with a duplicate value
+2) The add method returns false if you attempt to add an element with a duplicate value
+3) A set may contain elements that return duplicate values from a call to the equals method
+4) Duplicate values will cause an error at compile time
+
+
+Question 22)
+What can cause a thread to stop executing?
+1) The program exits via a call to System.exit(0);
+2) Another thread is given a higher priority
+3) A call to the thread's stop method.
+4) A call to the halt method of the Thread class
+
+
+Question 23)
+For a class defined inside a method, what rule governs access to the variables of the enclosing method?
+1) The class can access any variable
+2) The class can only access static variables
+3) The class can only access transient variables
+4) The class can only access final variables
+
+
+Question 25)
+What will happen when you attempt to compile and run the following code
+public class Hope{
+public static void main(String argv[]){
+ Hope h = new Hope();
+ }
+protected Hope(){
+ for(int i =0; i <10; i ++){
+  System.out.println(i);
+  }
+ }
+}
+1) Compilation error: Constructors cannot be declared protected
+2) Run time error: Constructors cannot be declared protected
+3) Compilation and running with output 0 to 10
+4) Compilation and running with output 0 to 9
+
+
+Question 26)
+What will happen when you attempt to compile and run the following code
+public class MySwitch{
+
+public static void main(String argv[]){
+    MySwitch ms= new MySwitch();
+    ms.amethod();
+    }
+
+public void amethod(){
+
+    int k=10; 
+        switch(k){ 
+        default: //Put the default at the bottom, not here
+            System.out.println("This is the default output"); 
+            break; 
+         case 10: 
+            System.out.println("ten");
+         case 20: 
+            System.out.println("twenty"); 
+        break; 
+       }
+    }
+}
+1) None of these options
+2) Compile time errror target of switch must be an integral type
+3) Compile and run with output "This is the default output"
+4) Compile and run with output "ten"
+
+Question 28)
+
+What will happen when you attempt to compile and run the following code
+public class As{
+int i = 10;
+int j;
+char z= 1;
+boolean b;
+public static void main(String argv[]){
+                As a = new As();
+                a.amethod();
+        }
+        public void amethod(){
+        System.out.println(j);
+        System.out.println(b);                
+        }
+}
+1) Compilation succeeds and at run time an output of 0 and false
+2) Compilation succeeds and at run time an output of 0 and true
+3) Compile time error b is not initialised
+4) Compile time error z must be assigned a char value
+
+
+Question 29)
+
+What will happen when you attempt to compile and run the following code with the command line "hello there"
+public class Arg{
+String[] MyArg;
+        public static void main(String argv[]){
+        MyArg=argv;
+        }
+        public void amethod(){
+                System.out.println(argv[1]);
+        }
+}
+1) Compile time error
+2) Compilation and output of "hello"
+3) Compilation and output of "there"
+4) None of the above
+
+
+Question 30)
+What will happen when you attempt to compile and run the following code
+public class StrEq{
+
+public static void main(String argv[]){
+        StrEq s = new StrEq();
+        }
+        private StrEq(){
+                String s = "Marcus";
+                String s2 = new String("Marcus");
+                if(s == s2){
+                        System.out.println("we have a match");
+                        }else{
+                        System.out.println("Not equal");
+                }
+       }
+}
+1) Compile time error caused by private constructor
+2) Output of "we have a match"
+3) Output of "Not equal"
+4) Compile time error by attempting to compare strings using ==
+
+
+Question 31)
+1) What will happen when you attempt to compile and run the following code
+import java.io.*;
+
+class Base{
+public static void amethod()throws FileNotFoundException{}
+}
+
+public class ExcepDemo extends Base{
+public static void main(String argv[]){
+       ExcepDemo e = new ExcepDemo();
+}
+public static void amethod(){}
+
+protected ExcepDemo(){
+ try{
+  DataInputStream din = new DataInputStream(System.in);
+  System.out.println("Pausing");
+  din.readChar();
+  System.out.println("Continuing");
+  this.amethod();
+  }catch(IOException ioe) {}
+}
+
+}
+1)Compile time error caused by protected constructor
+2) Compile time error caused by amethod not declaring Exception
+3) Runtime error caused by amethod not declaring Exception
+4) Compile and run with output of "Pausing" and "Continuing" after a key is hit
+
+
+
+Question 33)
+What will happen when you attempt to compile and run this code
+//Demonstration of event handling
+import java.awt.event.*;
+import java.awt.*;
+
+public class MyWc extends Frame implements WindowListener{
+public static void main(String argv[]){
+        MyWc mwc = new MyWc();
+        }
+        public void windowClosing(WindowEvent we){
+                System.exit(0);
+                }//End of windowClosing
+
+      public void  MyWc(){
+        setSize(300,300);
+        setVisible(true);
+        }
+}//End of class
+1) Error at compile time
+2) Visible Frame created that that can be closed
+3) Compilation but no output at run time
+4) Error at compile time because of comment before import statements
+
+
+Question 34)
+Which option most fully describes will happen when you attempt to compile and run the following code
+public class MyAr{
+public static void main(String argv[]) {
+        MyAr m = new MyAr();
+        m.amethod();
+        }
+        public void amethod(){
+        static int i;
+        System.out.println(i);
+        }
+}
+1) Compilation and output of the value 0
+2) Compile time error because i has not been initialized
+3) Compilation and output of null
+4) Compile time error
+
+
+Question 35) 
+Which of the following will compile correctly
+1) short myshort = 99S;
+2) String name = 'Excellent tutorial Mr Green';
+3) char c = 17c;
+4)int z = 015;
+
+
+Question 36) 
+Which of the following are Java key words
+1)double
+2)Switch
+3)then
+4)instanceof
+
+
+
+Question 58)
+Which of the following are correct event handling methods
+
+1) mousePressed(MouseEvent e){}
+2) MousePressed(MouseClick e){}
+3) functionKey(KeyPress k){}
+4) componentAdded(ContainerEvent e){}
+
+
+
+Question 59) 
+Which of the following are methods of the Collection interface?
+1) iterator
+2) isEmpty
+3) toArray
+4) setText
+
+
+Question 60)
+Which of the following best describes the use of the synhronized keyword?
+1) Allows two process to run in paralell but to communicate with each other
+2) Ensures only one thread at a time may access a class or object
+3) Ensures that two or more processes will start and end at the same time
+4) Ensures that two or more Threads will start and end at the same time
+
+Question 61)
+
+Which are the objects available in servlets in the following
+1. page
+2. request
+3. response
+4. config
+
+Question 62)
+
+For dynamic sql statements which statement class we use
+1. PreparedStatement
+2. PrepareStatement
+3. Statement
+
+Question 63)
+
+What is the correct syntax for directive tag
+1. <%!
+2. <%@
+3. <%=
+
+Question 64)
+
+which of the following are session tracking mechanisms
+
+1.Cookie
+2.Bookie
+3.URLcopywriting
+4.Hidden form data
+
+
+Answers
+
+Answer 1)
+Objective 1.2)
+1) The code will compile and run, printing out the words "My Func"
+A class that contains an abstract method must be declared abstract itself, but may contain non abstract methods.
+
+Answer 2)
+Objective 4.1)
+4) The code will compile but will complain at run time that main is not correctly defined
+In this example the parameter is a string not a string array as needed for the correct main method
+
+Answer 3)
+Objective 4.3)
+1) public
+2) private
+4) transient
+The keyword transient is easy to forget as is not frequently used. Although a method may be considered to be friendly like in C++ it is not a Java keyword.
+
+Answer 4) 
+Objective 1.2)
+2) The compiler will complain that the Base class is not declared as abstract.
+If a class contains abstract methods it must itself be declared as abstract
+
+Answer 5)
+Objective 1.2)
+1) To get to access hardware that Java does not know about
+3) To write optimised code for performance in a language such as C/C++
+
+Answer 6)
+Objective 1.2)
+4) Success in compilation and output of "amethod" at run time.
+A final method cannot be ovverriden in a sub class, but apart from that it does not cause any other restrictions.
+
+Answer 7) 
+Objective 1.2)
+4) Compilation and execution without error
+It would cause a run time error if you had a call to amethod though.
+
+Answer 8)
+Objective 1.2)
+1)Compile time error: Base cannot be private
+A top leve (non nested) class cannot be private.
+
+Answer 9) 
+Objective 1.2)
+4) P1 compiles cleanly but P2 has an error at compile time
+The package statement in P1.java is the equivalent of placing the file in a different directory to the file P2.java and thus when the compiler tries to compile P2 an error occurs indicating that superclass P1 cannot be found.
+
+Answer 10)
+Objective 1.1)
+2) An error at run time
+This code will compile, but at run-time you will get an ArrayIndexOutOfBounds exception. This becuase counting in Java starts from 0 and so the 5th element of this array would be i[4].
+Remember that arrays will always be initialized to default values wherever they are created.
+
+Answer 11)
+Objective 1.1)
+2)myarray.length;
+The String class has a length() method to return the number of characters. I have sometimes become confused between the two.
+
+Answer 12)
+Objective 8.2)
+3) A Frame with one large button marked Four in the Centre
+The default layout manager for a Frame is the BorderLayout manager. This Layout manager defaults to placing components in the centre if no constraint is passed with the call to the add method.
+
+Answer 13)
+Objective 8.2)
+4) Do nothing, the FlowLayout will position the component
+
+Answer 14)
+Objective 8.2)
+1) Use the setLayout method
+
+
+Answer 16)
+Objective 8.2)
+2) The buttons will run from left to right along the top of the frame
+
+The call to the setLayout(new FlowLayout()) resets the Layout manager for the entire frame and so the buttons end up at the top rather than the bottom.
+
+
+Answer 18)
+Objective 7.1)
+4) Clean compile but no output at runtime
+
+This is a bit of a sneaky one as I have swapped around the names of the methods you need to define and call when running a thread. If the for loop were defined in a method called
+public void run() 
+and the call in the main method had been to b.start()
+The list of values from 0 to 9 would have been output. 
+
+Answer 21)
+Objective 10.1)
+2) The add method returns false if you attempt to add an element with a duplicate value
+I find it a surprise that you do not get an exception.
+
+
+Answer 22) 
+Objective 7.1)
+1) The program exits via a call to exit(0);
+2) The priority of another thread is increased
+3) A call to the stop method of the Thread class
+
+Java threads are somewhat platform dependent and you should be carefull when making assumptions about Thread priorities. On some platforms you may find that a Thread with higher priorities gets to "hog" the processor.
+
+Answer 23) 
+Objective 4.1)
+4) The class can only access final variables 
+
+Answer 25)
+Objective 6.2)
+
+4) Compilation and running with output 0 to 9
+
+Answer 26)
+Objective 2.1)
+1) None of these options
+
+Because of the lack of a break statement after the break 10; statement the actual output will be 
+
+"ten" followed by "twenty"
+
+Answer 28)
+Objective 4.4)
+1) Compilation succeeds and at run time an output of 0 and false
+The default value for a boolean declared at class level is false, and integer is 0;
+
+Answer 29)
+Objective 1.2)
+1) Compile time error
+You will get an error saying something like "Cant make a static reference to a non static variable". Note that the main method is static.
+
+Answer 30)
+Objective 5.2)
+3) Output of "Not equal"
+Despite the actual character strings matching, using the == operator will simply compare memory location. Because the one string was created with the new operator it will be in a different location in memory to the other string.
+
+Answer 31)
+Objective 2.3)
+4) Compile and run with output of "Pausing" and "Continuing" after a key is hit
+An overriden method in a sub class must not throw Exceptions not thrown in the base class. In the case of the method amethod it throws no exceptions and will thus compile without complain. There is no reason that a constructor cannot be protected.
+
+Answer 33)
+Objective 4.6)
+1) Error at compile time
+If you implement an interface you must create bodies for all methods in that interface. This code will produce an error saying that MyWc must be declared abstract because it does not define all of the methods in WindowListener. Option 4 is nonsense as comments can appear anywhere. Option 3 suggesting that it might compile but not produce output is ment to mislead on the basis that what looks like a constructor is actually an ordinary method as it has a return type.
+
+Answer 34)
+Objective 1.2)
+4) Compile time error
+An error will be caused by attempting to define an integer as static within a method. The lifetime of a field within a method is the duration of the running of the method. A static field exists once only for the class. An approach like this does work with Visual Basic.
+
+Answer 35)
+Objective 9.5)
+4)int z = 015;
+The letters c and s do not exist as literal indicators and a String must be enclosed with double quotes, not single as in this case.
+
+Answer 36)
+Objective 4.3)
+1)double
+4)instanceof
+
+Note the upper case S on switch means it is not a keyword and the word then is part of Visual Basic but not Java. Also, instanceof looks like a method but is actually a keyword,
+
+Answer 59)
+Objective 10.1)
+1) iterator
+2) isEmpty
+3) toArray
+
+Answer 60)
+Objective 7.3)
+2) Ensures only one thread at a time may access a class or object
+
+Answer 61)
+2)
+3)
+4)
+ - (page is an object of jsp)
+
+Answer 62)
+1)
+
+Answer 63)
+2)
+
+Answer 64)
+1)
+

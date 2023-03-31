@@ -1,0 +1,1037 @@
+1
+1
+
+00:00:00,000  -->  00:00:02,459
+(upbeat music)
+2
+
+2
+
+00:00:02,459  -->  00:00:05,316
+(keyboard clicking)
+3
+
+3
+
+00:00:05,316  -->  00:00:06,373
+<v Tutor>Alright, the next algorithm</v>
+4
+
+4
+
+00:00:06,373  -->  00:00:08,979
+we're going to look at is Insertion Sort.
+5
+
+5
+
+00:00:08,979  -->  00:00:10,844
+Like the other algorithms we've seen,
+6
+
+6
+
+00:00:10,844  -->  00:00:12,387
+its partitions the array
+7
+
+7
+
+00:00:12,387  -->  00:00:14,941
+into sorted and unsorted partitions.
+8
+
+8
+
+00:00:14,941  -->  00:00:18,103
+But this time the implementation I'm going to show you,
+9
+
+9
+
+00:00:18,103  -->  00:00:21,474
+grows assorted partition from left to right.
+10
+
+10
+
+00:00:21,474  -->  00:00:24,674
+So it grows a sorted partition from the front of the array.
+11
+
+11
+
+00:00:24,674  -->  00:00:26,464
+So how does Insertion Sort work?
+12
+
+12
+
+00:00:26,464  -->  00:00:28,704
+Well, it starts out by saying that
+13
+
+13
+
+00:00:28,704  -->  00:00:31,952
+the element position zero is in the sorted partition.
+14
+
+14
+
+00:00:31,952  -->  00:00:34,674
+And because this sorted partition is of length one,
+15
+
+15
+
+00:00:34,674  -->  00:00:37,256
+by default, the element is sorted.
+16
+
+16
+
+00:00:37,256  -->  00:00:39,343
+Coz if you have an array of length one,
+17
+
+17
+
+00:00:39,343  -->  00:00:42,269
+or a partition of length one, it's sorted, right?
+18
+
+18
+
+00:00:42,269  -->  00:00:43,612
+There's only one element.
+19
+
+19
+
+00:00:43,612  -->  00:00:47,834
+So at the beginning, the elements from position one
+20
+
+20
+
+00:00:47,834  -->  00:00:50,408
+into the right or in the unsorted partition.
+21
+
+21
+
+00:00:50,408  -->  00:00:51,420
+And so we're going to set
+22
+
+22
+
+00:00:51,420  -->  00:00:53,954
+a first unsorted index field to one.
+23
+
+23
+
+00:00:53,954  -->  00:00:57,655
+Now on each iteration, we take the first element
+24
+
+24
+
+00:00:57,655  -->  00:00:59,963
+in the unsorted partition which will be the element
+25
+
+25
+
+00:00:59,963  -->  00:01:02,441
+at array of first unsorted index,
+26
+
+26
+
+00:01:02,441  -->  00:01:05,777
+and we insert it into the sorted partition.
+27
+
+27
+
+00:01:05,777  -->  00:01:07,481
+And so at the end of each iteration
+28
+
+28
+
+00:01:07,481  -->  00:01:10,084
+we will have grown this sorted partition by one.
+29
+
+29
+
+00:01:10,084  -->  00:01:12,159
+And so what we'll do on the first iteration
+30
+
+30
+
+00:01:12,159  -->  00:01:13,677
+is we will take 35,
+31
+
+31
+
+00:01:13,677  -->  00:01:16,322
+because that's the first unsorted value.
+32
+
+32
+
+00:01:16,322  -->  00:01:19,062
+And we will insert it into the sorted partition.
+33
+
+33
+
+00:01:19,062  -->  00:01:20,607
+And at the end of the iteration,
+34
+
+34
+
+00:01:20,607  -->  00:01:23,529
+the first two elements in the array will be sorted.
+35
+
+35
+
+00:01:23,529  -->  00:01:25,554
+So how is each element inserted?
+36
+
+36
+
+00:01:25,554  -->  00:01:30,393
+Well, what we do is we compare the value we're inserting
+37
+
+37
+
+00:01:30,393  -->  00:01:33,217
+with the values in the sorted partition.
+38
+
+38
+
+00:01:33,217  -->  00:01:36,727
+And we we traverse the sorted partition from right to left,
+39
+
+39
+
+00:01:36,727  -->  00:01:39,324
+and we look for a value that is less than
+40
+
+40
+
+00:01:39,324  -->  00:01:41,983
+or equal to the one we're trying to insert
+41
+
+41
+
+00:01:41,983  -->  00:01:44,185
+because once we find that value,
+42
+
+42
+
+00:01:44,185  -->  00:01:45,847
+we can stop looking we have found
+43
+
+43
+
+00:01:45,847  -->  00:01:47,710
+the correct insertion position
+44
+
+44
+
+00:01:47,710  -->  00:01:50,356
+for the new value that we're trying to insert.
+45
+
+45
+
+00:01:50,356  -->  00:01:53,037
+Because remember, when we're inserting the value
+46
+
+46
+
+00:01:53,037  -->  00:01:55,799
+we are working within the sorted partition.
+47
+
+47
+
+00:01:55,799  -->  00:02:00,261
+And so if the element at index i in the sorted partition
+48
+
+48
+
+00:02:00,261  -->  00:02:03,670
+is less than or equal to the element we're trying to insert,
+49
+
+49
+
+00:02:03,670  -->  00:02:07,581
+then all of the values to the left of element i
+50
+
+50
+
+00:02:07,581  -->  00:02:09,611
+will be less than or equal to the value
+51
+
+51
+
+00:02:09,611  -->  00:02:12,334
+we're trying to insert, because all the values
+52
+
+52
+
+00:02:12,334  -->  00:02:13,630
+are in sorted order.
+53
+
+53
+
+00:02:13,630  -->  00:02:16,718
+So as we look for the correct insertion position,
+54
+
+54
+
+00:02:16,718  -->  00:02:20,287
+we shift values in the sorted partition to the right.
+55
+
+55
+
+00:02:20,287  -->  00:02:22,646
+And you'll see this in action right now.
+56
+
+56
+
+00:02:22,646  -->  00:02:24,158
+Let's go through this by hand.
+57
+
+57
+
+00:02:24,158  -->  00:02:28,231
+So on the first iteration, we're going to assign 35
+58
+
+58
+
+00:02:28,231  -->  00:02:32,300
+to a new element field because 35 is the first element
+59
+
+59
+
+00:02:32,300  -->  00:02:33,881
+in the unsorted partition.
+60
+
+60
+
+00:02:33,881  -->  00:02:37,259
+And then we use i to traverse the sorted partition
+61
+
+61
+
+00:02:37,259  -->  00:02:38,886
+from right to left.
+62
+
+62
+
+00:02:38,886  -->  00:02:42,106
+So we compare 35 to 20.
+63
+
+63
+
+00:02:42,106  -->  00:02:46,499
+Now 35 is greater than 20 so 35 is already
+64
+
+64
+
+00:02:46,499  -->  00:02:50,125
+in its correct position in the sorted partition.
+65
+
+65
+
+00:02:50,125  -->  00:02:52,803
+It's not in its correct position in the array,
+66
+
+66
+
+00:02:52,803  -->  00:02:54,470
+but it is in the sorted partition.
+67
+
+67
+
+00:02:54,470  -->  00:02:57,194
+So after the first iteration, disordered partition
+68
+
+68
+
+00:02:57,194  -->  00:03:00,279
+has been grown to two lengths two
+69
+
+69
+
+00:03:00,279  -->  00:03:03,295
+and the first two elements are in their correct position.
+70
+
+70
+
+00:03:03,295  -->  00:03:06,520
+And now the first unsorted index is at index two
+71
+
+71
+
+00:03:06,520  -->  00:03:10,009
+and i is assigned one, because that's the right most index
+72
+
+72
+
+00:03:10,009  -->  00:03:11,641
+in the sorted partition.
+73
+
+73
+
+00:03:11,641  -->  00:03:14,569
+So we assign -15 to new element.
+74
+
+74
+
+00:03:14,569  -->  00:03:18,544
+And now we need to insert -15 into the sorted partition.
+75
+
+75
+
+00:03:18,544  -->  00:03:23,544
+So we compare -15 against 35 ,-15 is less than 35.
+76
+
+76
+
+00:03:24,022  -->  00:03:28,447
+And so we want to shift -15 down the array.
+77
+
+77
+
+00:03:28,447  -->  00:03:29,280
+But another way of looking at it
+78
+
+78
+
+00:03:29,280  -->  00:03:32,614
+is we're gonna shift 35 to the right
+79
+
+79
+
+00:03:32,614  -->  00:03:34,862
+to make room for -15.
+80
+
+80
+
+00:03:34,862  -->  00:03:38,843
+And so we we assign 35 to position two.
+81
+
+81
+
+00:03:38,843  -->  00:03:41,853
+Now don't worry that might we've overwritten -15
+82
+
+82
+
+00:03:41,853  -->  00:03:44,451
+because we haven't saved in a new element field.
+83
+
+83
+
+00:03:44,451  -->  00:03:47,451
+So now we're going to compare -15 to 20,
+84
+
+84
+
+00:03:47,451  -->  00:03:51,418
+<v ->15 is less than 20 so we're gonna shift 20 to the right</v>
+85
+
+85
+
+00:03:51,418  -->  00:03:53,409
+to make room for-15.
+86
+
+86
+
+00:03:53,409  -->  00:03:55,602
+And at this point, we've hit the front of the array
+87
+
+87
+
+00:03:55,602  -->  00:03:58,978
+so we have nothing else to compare -15 to
+88
+
+88
+
+00:03:58,978  -->  00:04:01,061
+basically we have the smallest element
+89
+
+89
+
+00:04:01,061  -->  00:04:03,622
+in the sorted partition and because we've hit the front
+90
+
+90
+
+00:04:03,622  -->  00:04:06,790
+of the array, this is where we're going to insert -15.
+91
+
+91
+
+00:04:06,790  -->  00:04:08,538
+And so we go ahead and do that.
+92
+
+92
+
+00:04:08,538  -->  00:04:10,445
+And we've ended the second iteration.
+93
+
+93
+
+00:04:10,445  -->  00:04:12,065
+And at this point, we've grown
+94
+
+94
+
+00:04:12,065  -->  00:04:14,007
+the sorted partition to three.
+95
+
+95
+
+00:04:14,007  -->  00:04:16,188
+And the first three elements in the array,
+96
+
+96
+
+00:04:16,188  -->  00:04:19,804
+which is a sorted partition are in their correct positions
+97
+
+97
+
+00:04:19,804  -->  00:04:21,059
+in the sorted partition.
+98
+
+98
+
+00:04:21,059  -->  00:04:24,437
+So now the first unsorted indexes at position three.
+99
+
+99
+
+00:04:24,437  -->  00:04:27,357
+So we're going to going to assign the value of seven
+100
+
+100
+
+00:04:27,357  -->  00:04:31,414
+to new element and we're going to compare seven against 35.
+101
+
+101
+
+00:04:31,414  -->  00:04:32,994
+Seven is less than 35.
+102
+
+102
+
+00:04:32,994  -->  00:04:35,307
+So we're gonna shift 35 to the right.
+103
+
+103
+
+00:04:35,307  -->  00:04:38,547
+We compare seven against 20, seven is less than 20.
+104
+
+104
+
+00:04:38,547  -->  00:04:40,610
+So we're gonna shift 20 to the right
+105
+
+105
+
+00:04:40,610  -->  00:04:43,330
+and then we compare seven against -15.
+106
+
+106
+
+00:04:43,330  -->  00:04:45,397
+Seven is greater than -15.
+107
+
+107
+
+00:04:45,397  -->  00:04:48,035
+So we have found the insertion position.
+108
+
+108
+
+00:04:48,035  -->  00:04:50,706
+Remember, we're working within the sorted partition.
+109
+
+109
+
+00:04:50,706  -->  00:04:53,960
+So if there was anything to the left of -15,
+110
+
+110
+
+00:04:53,960  -->  00:04:56,679
+all those values would be less than -15.
+111
+
+111
+
+00:04:56,679  -->  00:04:59,404
+So there's no need to keep traversing the sorted partition
+112
+
+112
+
+00:04:59,404  -->  00:05:01,207
+the moment we have hit an element
+113
+
+113
+
+00:05:01,207  -->  00:05:04,701
+that's less than or equal to the one we're trying to insert,
+114
+
+114
+
+00:05:04,701  -->  00:05:07,266
+we found that correct insertion position.
+115
+
+115
+
+00:05:07,266  -->  00:05:10,306
+And so we're going to insert seven into position one.
+116
+
+116
+
+00:05:10,306  -->  00:05:13,235
+And we have completed another iteration,
+117
+
+117
+
+00:05:13,235  -->  00:05:15,510
+we've grown the sorted partition by one.
+118
+
+118
+
+00:05:15,510  -->  00:05:19,366
+And all of the elements in the sorted partition are sorted.
+119
+
+119
+
+00:05:19,366  -->  00:05:20,872
+So the next element we're going
+120
+
+120
+
+00:05:20,872  -->  00:05:22,742
+to want to insert is 55.
+121
+
+121
+
+00:05:22,742  -->  00:05:27,092
+So we compare 55 against 35, 55 is greater than 35.
+122
+
+122
+
+00:05:27,092  -->  00:05:30,141
+So we've already found it's correct position.
+123
+
+123
+
+00:05:30,141  -->  00:05:32,212
+And so we completed this iteration.
+124
+
+124
+
+00:05:32,212  -->  00:05:34,274
+And now the first five elements in the array
+125
+
+125
+
+00:05:34,274  -->  00:05:36,512
+are their correct sorted position.
+126
+
+126
+
+00:05:36,512  -->  00:05:39,357
+Now, I'm not going to go through one and -22,
+127
+
+127
+
+00:05:39,357  -->  00:05:40,932
+because one is gonna get shifted
+128
+
+128
+
+00:05:40,932  -->  00:05:43,370
+all the way down to position one,
+129
+
+129
+
+00:05:43,370  -->  00:05:46,383
+and then -22 will be shifted all the way
+130
+
+130
+
+00:05:46,383  -->  00:05:47,972
+down to position zero.
+131
+
+131
+
+00:05:47,972  -->  00:05:50,174
+So I won't bore you with slides doing that.
+132
+
+132
+
+00:05:50,174  -->  00:05:51,473
+I think you at this point,
+133
+
+133
+
+00:05:51,473  -->  00:05:53,748
+you get the gist of the algorithm.
+134
+
+134
+
+00:05:53,748  -->  00:05:55,369
+And so that's Insertion Sort.
+135
+
+135
+
+00:05:55,369  -->  00:05:58,211
+It starts out by saying the first element is sorted.
+136
+
+136
+
+00:05:58,211  -->  00:06:00,730
+The implementation or at least the implementation
+137
+
+137
+
+00:06:00,730  -->  00:06:02,968
+that I'm going to show you does that.
+138
+
+138
+
+00:06:02,968  -->  00:06:06,716
+It grows the sorted partition from left to right.
+139
+
+139
+
+00:06:06,716  -->  00:06:09,470
+And on each iteration, it picks off the first element
+140
+
+140
+
+00:06:09,470  -->  00:06:12,114
+in the unsorted partition and it inserts it
+141
+
+141
+
+00:06:12,114  -->  00:06:14,881
+into the correct position in the sorted partition.
+142
+
+142
+
+00:06:14,881  -->  00:06:17,523
+And it does that by shifting elements to the right
+143
+
+143
+
+00:06:17,523  -->  00:06:19,751
+to make room for the new element.
+144
+
+144
+
+00:06:19,751  -->  00:06:22,565
+So Insertion Sort is an In-place algorithm.
+145
+
+145
+
+00:06:22,565  -->  00:06:25,114
+We don't need to create any temporary arrays,
+146
+
+146
+
+00:06:25,114  -->  00:06:26,494
+we have a few extra fields.
+147
+
+147
+
+00:06:26,494  -->  00:06:28,210
+But as I've said before,
+148
+
+148
+
+00:06:28,210  -->  00:06:30,331
+as long as the extra memory we're using
+149
+
+149
+
+00:06:30,331  -->  00:06:33,797
+doesn't depend on the number of items were sorted.
+150
+
+150
+
+00:06:33,797  -->  00:06:35,285
+It's an In-place algorithm.
+151
+
+151
+
+00:06:35,285  -->  00:06:37,421
+It's a quadratic algorithm.
+152
+
+152
+
+00:06:37,421  -->  00:06:39,657
+And it's a stable algorithm.
+153
+
+153
+
+00:06:39,657  -->  00:06:43,353
+It's stable because when we're picking off elements,
+154
+
+154
+
+00:06:43,353  -->  00:06:45,383
+we're doing that from left to right.
+155
+
+155
+
+00:06:45,383  -->  00:06:48,515
+So if let's say there are two nines in the array,
+156
+
+156
+
+00:06:48,515  -->  00:06:52,166
+we're going to insert the left most nine first
+157
+
+157
+
+00:06:52,166  -->  00:06:54,638
+and then when we come to the right most nine.
+158
+
+158
+
+00:06:54,638  -->  00:06:57,724
+Remember that when we're looking for the insertion position,
+159
+
+159
+
+00:06:57,724  -->  00:07:01,875
+we stop when we hit an element that is less than or equal
+160
+
+160
+
+00:07:01,875  -->  00:07:03,789
+to the one that we're inserting.
+161
+
+161
+
+00:07:03,789  -->  00:07:05,855
+So when we're inserting the nine,
+162
+
+162
+
+00:07:05,855  -->  00:07:08,503
+we're eventually going to hit the first nine,
+163
+
+163
+
+00:07:08,503  -->  00:07:10,743
+we inserted into the sorted partition.
+164
+
+164
+
+00:07:10,743  -->  00:07:13,015
+And that second nine will be inserted
+165
+
+165
+
+00:07:13,015  -->  00:07:15,377
+to the right of the first nine.
+166
+
+166
+
+00:07:15,377  -->  00:07:16,760
+And so the relative positions
+167
+
+167
+
+00:07:16,760  -->  00:07:19,357
+of those two nines will be preserved.
+168
+
+168
+
+00:07:19,357  -->  00:07:23,144
+And so insertion sort is a stable sort algorithm.
+169
+
+169
+
+00:07:23,144  -->  00:07:27,223
+Okay, so that's an explanation of Insertion Sort.
+170
+
+170
+
+00:07:27,223  -->  00:07:28,926
+And we've gone through the implementation
+171
+
+171
+
+00:07:28,926  -->  00:07:29,843
+I'm going to show you,
+172
+
+172
+
+00:07:29,843  -->  00:07:32,421
+so let's get on to coding that implementation.
+173
+
+173
+
+00:07:32,421  -->  00:07:34,503
+I'll see you in the next video.

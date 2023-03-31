@@ -1,0 +1,199 @@
+ZOHO Deluge Questions
+
+1. Initialise a variable with a date value and print it.
+
+2. Initialise a variable with a date & time value and print it.
+
+3. Given two input, print the addition of the numbers present in both
+
+inputs. a= 2; b= 5; Using arithmetic operator (+.-,*.() print values.
+
+Karan Mark for subjects Tamil and English is 65, 60 respectively If students get more than 50 in both the subjects print pass else print fail.
+
+4. Find the average of 10, 15, 27, 49, 32.
+
+5.Given two numbers, print smallest among them. 6. Compute the square of a given number and print it.
+
+7.Given a number, get the absolute value of it and print power of 3 for the absolute value.
+
+8. Given two numbers, print "Equals" if the ceiling for the first number is equal to the flooring for the second number and vice versa
+
+9. Write a program to perform addition, subtraction, multiplication and division of two numbers. Print the results in the same order
+
+10.Given two numbers, a. print "Equals" if ceiling for the first number is equal to flooring for the second number b. print "Equals" if flooring for the first number is equal to ceiling for the second number.
+
+11. Print Simple Interest and Compound Interest after initializing all the necessary inputs. 7. Find the length of the given input string. Print it. Also print the first half of the given string "It is bright and sunny today"
+
+12. Given two numbers, print "Equals" if the square root of the first number is equal to the square of the second number and vice versa
+
+13. Given a number, print "Perfect Square" if it is a perfect square Ex : 25 is a perfect square & 27 is not a perfect square
+
+14.Check whether the two input strings are equal or not. [The rule of equality must be as follows,
+
+Input: Can, cAn, Output: Equal | Input: Cane, CAN; Output: Not Equal]
+
+15. Write a program that accepts a number from the user between 1 and 7 and displays the name of its corresponding weekday.
+
+[NOTE:- The Week starts on Monday]
+
+
+16.Print a student's grade based on the mark obtained. The grades can be given as follows:
+
+S-95 to 100; A-85 to 94; B-70 to 84: C-50-69; F-Below 50.
+
+17.Given a list of numbers [20,30,10,15,16,12,9], print all the numbers that are divisible by 4.
+
+18.Given a list of names
+
+[Goblin, Peter, Octopus, Electro, Lizard, Sandman, Goblin] A. remove Octopus from the list and print the remaining list
+
+B. remove duplicates and print the list.
+
+19. Among the given cities, print all the city names which start with 'S. The cities are, Tokyo, Shimla, London, Sydney, Boston, San Diego and Kashmir.
+
+20. Print the reverse of a given string. Also check if the given string is a palindrome or not.
+
+[Example: MADAM, MALAYALAM are palindrome words]
+
+21.Given a number, if it is even, change it to the next odd number and if it is odd, change it to the square of the number. Print the changed number in both the cases.
+
+22.Given a number, print "Perfect Square" if it is a perfect square Ex : 25 is a perfect square & 27 is not a perfect square
+
+
+23 Given a number,
+
+A. print the difference between its flooring value and ceiling value.
+
+B. print the absolute value for the above.
+
+24. Given a sentence Zoho Corporation Pvt Ltd", print the first 7 characters.
+
+25.Given a sentence "Zoho Corporation Pvt Ltd ", print the last 7 characters
+
+26.Given a sentence " Zoho Corporation Zoho Corporation", print number of times "Zoho" has occurred in the string.
+
+27.Given a sentence " Zoho Corporation Zoho ", print whether the sentence starts and ends with the same word or not.
+
+28. Given a sentence " Zoho Corporation Pvt Ltd", remove all the spaces present in the string and print it.
+
+30.Given a sentence " Zoho is best", print the words that occur before "is".
+
+31.Given a sentence " Zoho is best ", print the words that occur after "is".
+
+32.Given a sentence, "Zoho Corporation Pvt Ltd", print the length of each word 
+
+33. Print whether the given input is palindrome or not
+
+34.Given a sentence, convert the first alphabet of every word in the
+
+sentence to uppercase and print it. 35. Given a sentence, "Try 2 be the best version of yourself 4 you",
+
+remove all the numeric values present and print it.
+
+36.Given a sentence " Zoho Corporation Zoho Corporation", A. replace 2nd occurrence of "Zoho" with "Pvt" B. replace 2nd occurrence of "Corporation" with "Ltd" C. Print the final sentence
+
+37.In a given list of stationary items, [Pencil, Eraser, Ruler, Pen, Compass, Marker], find the position of Ruler.
+
+38.In the above list, remove Ruler and Compass and add them to a separate Geometrical stationary list which already contains the items Divider and Protractor
+
+39 Amy's mother has created a shopping list as follows, [Ketchup, Water Bottle, Milk, Butter, Chips, Flour].
+
+At the same time, Amy also has a shopping list of her own which contains [Milk, Flour, Chips, Chocolates, Napkins].
+
+Create a combined list out of the two lists without any duplication.
+
+40.For the given input list, [10,20,30,40,50,60,70,80]
+
+extract all the elements present between 30 and 70.
+
+41. For given date,
+
+A. if the month is even, add 3 days to the date
+
+B. if the year is even, add 2 months to the date
+
+C. if the year is leap year, add 1 week to date
+
+D. Print the result date
+
+42.Given a list of names and a name to remove from list. Remove all the occurrences of the name and print the list. Input: [ Ram, Gowtham, Jai, Manoj, Ram, Ananth ] Output: [Gowtham, Jai, Manoj, Ananth]
+
+43. Given a list of numbers, print the median of smallest and largest number.
+
+44. Given a list of numbers, print the median of 3rd smallest and 2nd largest number.
+
+45. Given two lists of numbers, list1 and list2,
+
+a. add even numbers present in list2 to list!
+
+b. remove duplicates present in list1 
+
+
+46. Given two lists of numbers, list1 and list2
+
+a. Print distinct numbers from both the lists.
+
+b. Print common numbers from both the lists.
+
+47. Given a list of names, print the list that contains names present in odd index.
+
+Input: [Ram, lakshman, manoz, subbu, Varsha]
+
+Indexing 1 2 3 4 5.
+
+Output: [Ram, manoz, varsha]
+
+48. Given a list, remove the word from the list if it is present more than once.
+
+Input: [Ram Gowtham, Jai, Manoj, Ram, Ananth]
+
+Output: [Gowtham, Jai, Manoj, Ananth]
+
+49.Given a list of numbers, list1 and list2
+
+A. find median of list1: median1
+
+B. find median of list2: median2
+
+50.In an inventory application, there is a map which contains a mapping between products and their quantities. Print all the products alone in the map along with the count of the products. In the same map, check if a specific product is present or not.
+
+51. There are two maps with different sets of items. Merge both the maps to create a single one.
+
+52. Following Gym equipment whose prices have been raised are as follows, Dumbbells, Treadmill and Gym Bike. Javed is headed to buy such equipment and contains a shopping list of his own with the prices also mentioned as follows,
+
+(Gloves: 50, Dumbbells: 200, Plates: 115, Treadmill: 500, Bench: 100, Gym Bike: 800).
+
+The price of the dumbbell is increased to 300, Treadmill to 650 and Gym Bike to 880. Update Javed's shopping list with these increased prices.
+
+53. Enter 3 subject marks and print/find whether the student is passed or failed.
+
+A. Use AND operator
+
+B. Use OR operator
+
+C.Use NOT operator
+
+54.Input a date and print the season (one of the 4 seasons) which it belongs to.
+
+55.For a given number, Print its multiplication table (say up to 10) Hint: using collections
+
+
+56. A HR wants to maintain a map between Employee IDs and Employee names. Initialize the employee information in the map with these details, {15: Mohan), (56: Srishti}, {23: Arun), [75: Dinesh), (33: Karthik), (94: Santhosh), (2: Vignesh), (13: Sandeep). (69: Navin), (19: Murugan).
+
+A. Print the employee names in Ascending order.
+
+B. The employee ID of Santhosh is being modified to 105 from 94. Make the change in the map accordingly.
+
+C. Check if Karthik is present as an Employee or not.
+
+D. How many employees information is present on the map maintained by the HR currently.
+
+E. Srishti has decided to quit the team. The HR needs to remove her details from the map. Print the map once it has been updated.
+
+57. An employee gets 25000 as salary. Salary breakup as given below Basic - 12000, HRA-5000, Allowance - 3000, Others - 5000 calculate the current salary when Basic is increased 20% and allowance by 10%
+
+58.Department A has 5 Students- Ram, Karthik, Suresh, Venkat and Raj. They have scored [S1,S2.S3,S4,S5]-[45,70,39,88,30]. [54,73,44,78,66], [63,45,49,51,55], [63,76,57,88,41]. [77,68,99,93,93] in examination. Calculate the rank of students and the average marks scored in each subject.
+
+59. To complete a project, a team of 5 needs 48 hours designer, 152 hours of developer and 40 hours of Marketing. Find out the total 
+
+

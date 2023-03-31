@@ -1,0 +1,959 @@
+1
+1
+
+00:00:00,290  -->  00:00:02,630
+(bright music)
+2
+
+2
+
+00:00:02,630  -->  00:00:05,330
+(keyboard clacking)
+3
+
+3
+
+00:00:05,330  -->  00:00:07,730
+<v Sarah>All right, so let's implement insertion sort.</v>
+4
+
+4
+
+00:00:07,730  -->  00:00:09,260
+I've already created the project.
+5
+
+5
+
+00:00:09,260  -->  00:00:10,970
+I'll be putting code into
+6
+
+6
+
+00:00:10,970  -->  00:00:14,150
+academy.learnprogramming.insertionsort.
+7
+
+7
+
+00:00:14,150  -->  00:00:18,160
+I've added the usual array and code to print the array.
+8
+
+8
+
+00:00:18,160  -->  00:00:21,490
+And this implementation doesn't need the swap method.
+9
+
+9
+
+00:00:21,490  -->  00:00:24,180
+We don't swap, we shift elements.
+10
+
+10
+
+00:00:24,180  -->  00:00:26,170
+And so I have not added the swap method
+11
+
+11
+
+00:00:26,170  -->  00:00:27,270
+because we don't need it.
+12
+
+12
+
+00:00:27,270  -->  00:00:28,540
+Okay, so let's get going,
+13
+
+13
+
+00:00:28,540  -->  00:00:32,213
+so we'll say for int firstUnsortedIndex
+14
+
+14
+
+00:00:34,870  -->  00:00:35,930
+equals one
+15
+
+15
+
+00:00:35,930  -->  00:00:39,310
+because remember, this implementation starts out
+16
+
+16
+
+00:00:39,310  -->  00:00:42,440
+by assuming that the element at position zero
+17
+
+17
+
+00:00:42,440  -->  00:00:43,960
+is in the sorted partition,
+18
+
+18
+
+00:00:43,960  -->  00:00:47,710
+and so the first unsorted index will start at one.
+19
+
+19
+
+00:00:47,710  -->  00:00:49,220
+And then we're gonna keep going
+20
+
+20
+
+00:00:49,220  -->  00:00:52,250
+as long as the first unsorted index
+21
+
+21
+
+00:00:52,250  -->  00:00:54,710
+is less than the length of the array.
+22
+
+22
+
+00:00:54,710  -->  00:00:56,640
+So we're gonna examine all the elements
+23
+
+23
+
+00:00:56,640  -->  00:00:58,940
+right up to the end of the array.
+24
+
+24
+
+00:00:58,940  -->  00:01:01,010
+And after each iteration,
+25
+
+25
+
+00:01:01,010  -->  00:01:04,680
+the first unsorted index will be incremented by one,
+26
+
+26
+
+00:01:04,680  -->  00:01:06,730
+because we're growing the sorted partition
+27
+
+27
+
+00:01:06,730  -->  00:01:09,900
+from left to right, and so the first unsorted index
+28
+
+28
+
+00:01:09,900  -->  00:01:14,650
+is going to be increasing by one after every iteration.
+29
+
+29
+
+00:01:14,650  -->  00:01:16,210
+Okay, so the first thing we're gonna do
+30
+
+30
+
+00:01:16,210  -->  00:01:20,380
+is save the value of the element we're going to insert
+31
+
+31
+
+00:01:20,380  -->  00:01:21,320
+into new element
+32
+
+32
+
+00:01:21,320  -->  00:01:25,090
+because as you saw in the slides, when we do the shifting,
+33
+
+33
+
+00:01:25,090  -->  00:01:28,700
+that position, the element, is going to be overwritten.
+34
+
+34
+
+00:01:28,700  -->  00:01:30,450
+And so we need to save the value off,
+35
+
+35
+
+00:01:30,450  -->  00:01:35,103
+so we're gonna save off intArray firstUnsortedIndex
+36
+
+36
+
+00:01:37,210  -->  00:01:40,790
+and I'm going to declare i outside the loop
+37
+
+37
+
+00:01:40,790  -->  00:01:43,020
+because I need it after the loop.
+38
+
+38
+
+00:01:43,020  -->  00:01:44,850
+And now, we're going to code the loop
+39
+
+39
+
+00:01:44,850  -->  00:01:47,890
+that does the traversal of the sorted partition
+40
+
+40
+
+00:01:47,890  -->  00:01:52,500
+and looks for the correct position to insert new element.
+41
+
+41
+
+00:01:52,500  -->  00:01:56,583
+So we're gonna say for i equals firstUnsortedIndex
+42
+
+42
+
+00:01:58,820  -->  00:02:01,410
+because when we start out, the element we want to insert
+43
+
+43
+
+00:02:01,410  -->  00:02:03,493
+is that first inserted index,
+44
+
+44
+
+00:02:04,420  -->  00:02:07,150
+and we're going to continue to loop,
+45
+
+45
+
+00:02:07,150  -->  00:02:09,410
+in other words, we're going to continue to look
+46
+
+46
+
+00:02:09,410  -->  00:02:13,150
+and keep shifting items, as long as i is greater than zero
+47
+
+47
+
+00:02:13,150  -->  00:02:16,000
+because that means we haven't hit the front of the array.
+48
+
+48
+
+00:02:17,010  -->  00:02:18,060
+And...
+49
+
+49
+
+00:02:23,070  -->  00:02:26,120
+And we'll keep going as long as
+50
+
+50
+
+00:02:26,120  -->  00:02:29,890
+whatever's at intArray i minus one
+51
+
+51
+
+00:02:29,890  -->  00:02:32,170
+is greater than newElement.
+52
+
+52
+
+00:02:33,170  -->  00:02:34,370
+So what is this doing?
+53
+
+53
+
+00:02:34,370  -->  00:02:35,680
+Just to go over this again,
+54
+
+54
+
+00:02:35,680  -->  00:02:39,620
+we want to keep looking for the insertion position
+55
+
+55
+
+00:02:39,620  -->  00:02:42,070
+as long as we haven't hit the front of the array
+56
+
+56
+
+00:02:42,070  -->  00:02:43,910
+because if we hit the front of the array,
+57
+
+57
+
+00:02:43,910  -->  00:02:46,410
+it means that the element we're trying to insert
+58
+
+58
+
+00:02:46,410  -->  00:02:48,420
+is the smallest element we've seen so far
+59
+
+59
+
+00:02:48,420  -->  00:02:50,810
+and the correct insertion position is zero.
+60
+
+60
+
+00:02:50,810  -->  00:02:54,290
+And we wanna keep looking as long as
+61
+
+61
+
+00:02:54,290  -->  00:02:56,990
+the element we're looking at in the sorted partition
+62
+
+62
+
+00:02:56,990  -->  00:02:59,800
+is greater than the one we're trying to insert,
+63
+
+63
+
+00:02:59,800  -->  00:03:03,660
+because if the element at i minus one is greater
+64
+
+64
+
+00:03:03,660  -->  00:03:05,290
+than the element we're trying to insert,
+65
+
+65
+
+00:03:05,290  -->  00:03:08,080
+then we still haven't found the correct insertion position.
+66
+
+66
+
+00:03:08,080  -->  00:03:10,410
+So the moment we hit the front of the array,
+67
+
+67
+
+00:03:10,410  -->  00:03:13,210
+or the moment we hit an element that is less than
+68
+
+68
+
+00:03:13,210  -->  00:03:16,020
+or equal to the element we're trying to insert,
+69
+
+69
+
+00:03:16,020  -->  00:03:18,410
+we have found the correct insertion position.
+70
+
+70
+
+00:03:18,410  -->  00:03:20,860
+And on each iteration, we're going to decrement i
+71
+
+71
+
+00:03:20,860  -->  00:03:23,750
+because remember we are traversing the sorted partition
+72
+
+72
+
+00:03:23,750  -->  00:03:26,930
+and doing the comparisons from right to left,
+73
+
+73
+
+00:03:26,930  -->  00:03:29,610
+and so we're moving down the sorted partition.
+74
+
+74
+
+00:03:29,610  -->  00:03:31,570
+Okay, so what do want to do
+75
+
+75
+
+00:03:31,570  -->  00:03:33,650
+if we haven't hit the front of the array
+76
+
+76
+
+00:03:33,650  -->  00:03:36,410
+and if the element at i minus one
+77
+
+77
+
+00:03:36,410  -->  00:03:38,370
+is greater than the element we're inserting?
+78
+
+78
+
+00:03:38,370  -->  00:03:39,890
+Well, if that's the case,
+79
+
+79
+
+00:03:39,890  -->  00:03:44,570
+we want to shift the element at i minus one to the right,
+80
+
+80
+
+00:03:44,570  -->  00:03:48,310
+because we need to make room for this new element,
+81
+
+81
+
+00:03:48,310  -->  00:03:49,500
+so what we're going to do
+82
+
+82
+
+00:03:49,500  -->  00:03:52,050
+is we're going to assign intArray i
+83
+
+83
+
+00:03:53,730  -->  00:03:57,193
+with intArray i minus one,
+84
+
+84
+
+00:03:58,770  -->  00:04:01,290
+and so this is where we're doing the shifting.
+85
+
+85
+
+00:04:01,290  -->  00:04:04,770
+We're shifting from left to right.
+86
+
+86
+
+00:04:04,770  -->  00:04:08,050
+So for example, when we want to insert minus 15,
+87
+
+87
+
+00:04:08,050  -->  00:04:09,930
+assume we've done the first iteration
+88
+
+88
+
+00:04:09,930  -->  00:04:12,470
+and 20 and 35 are in the sorted partition
+89
+
+89
+
+00:04:12,470  -->  00:04:14,430
+when we want to insert minus 15,
+90
+
+90
+
+00:04:14,430  -->  00:04:16,730
+the first unsorted index will be two,
+91
+
+91
+
+00:04:16,730  -->  00:04:19,940
+so i will be two, so we'll say is i greater than zero?
+92
+
+92
+
+00:04:19,940  -->  00:04:21,040
+yes it is.
+93
+
+93
+
+00:04:21,040  -->  00:04:25,320
+Is the value at intArray i minus one, which is 35,
+94
+
+94
+
+00:04:25,320  -->  00:04:27,020
+is that greater than minus 15?
+95
+
+95
+
+00:04:27,020  -->  00:04:28,150
+Well, yes it is.
+96
+
+96
+
+00:04:28,150  -->  00:04:31,350
+So this condition is met, and so what we're going to do is
+97
+
+97
+
+00:04:31,350  -->  00:04:36,300
+we're going to assign intArray two with intArray i minus one
+98
+
+98
+
+00:04:36,300  -->  00:04:37,290
+which is intArray one,
+99
+
+99
+
+00:04:37,290  -->  00:04:41,270
+so we're effectively going to assign 35 to position two,
+100
+
+100
+
+00:04:41,270  -->  00:04:42,820
+and we, you saw this in the slide
+101
+
+101
+
+00:04:42,820  -->  00:04:43,970
+so if you're having trouble
+102
+
+102
+
+00:04:43,970  -->  00:04:45,590
+understanding what's going on here,
+103
+
+103
+
+00:04:45,590  -->  00:04:47,190
+go ahead and look at the slides.
+104
+
+104
+
+00:04:47,190  -->  00:04:49,480
+And then we'll decrement i to one,
+105
+
+105
+
+00:04:49,480  -->  00:04:51,530
+and so on the second iteration,
+106
+
+106
+
+00:04:51,530  -->  00:04:53,160
+we'll say is i greater than zero,
+107
+
+107
+
+00:04:53,160  -->  00:04:54,240
+well, yes it is
+108
+
+108
+
+00:04:54,240  -->  00:04:58,040
+'cause it's one, and we'll say is intArray one minus one,
+109
+
+109
+
+00:04:58,040  -->  00:04:59,400
+which is intArray zero,
+110
+
+110
+
+00:04:59,400  -->  00:05:02,000
+is that greater than the new element, well, yes it is,
+111
+
+111
+
+00:05:02,000  -->  00:05:04,450
+'cause 20 is greater than minus 15
+112
+
+112
+
+00:05:04,450  -->  00:05:06,700
+and so we're gonna shift 20 to the right.
+113
+
+113
+
+00:05:06,700  -->  00:05:09,220
+So we're gonna say that intArray one
+114
+
+114
+
+00:05:09,220  -->  00:05:12,740
+is equal to intArray one minus one, which is zero.
+115
+
+115
+
+00:05:12,740  -->  00:05:15,210
+So 20 will get assigned to position one
+116
+
+116
+
+00:05:15,210  -->  00:05:19,070
+and then we're gonna loop around and subtract one from i
+117
+
+117
+
+00:05:19,070  -->  00:05:20,880
+and at this point, i will be zero,
+118
+
+118
+
+00:05:20,880  -->  00:05:22,600
+so we'll say is i greater than zero?
+119
+
+119
+
+00:05:22,600  -->  00:05:23,700
+Well, no it's not.
+120
+
+120
+
+00:05:23,700  -->  00:05:25,020
+So we'll drop out of the loop
+121
+
+121
+
+00:05:25,020  -->  00:05:26,730
+because we've hit the front of the array.
+122
+
+122
+
+00:05:26,730  -->  00:05:28,700
+Now when we find the correct position,
+123
+
+123
+
+00:05:28,700  -->  00:05:30,040
+what do we need to do?
+124
+
+124
+
+00:05:30,040  -->  00:05:33,290
+Well, our final step when we drop out of this loop
+125
+
+125
+
+00:05:33,290  -->  00:05:38,020
+is to assign intArray i with newElement,
+126
+
+126
+
+00:05:38,939  -->  00:05:40,370
+so in the case we just looked at,
+127
+
+127
+
+00:05:40,370  -->  00:05:42,410
+when we drop out of the loop, i is zero,
+128
+
+128
+
+00:05:42,410  -->  00:05:45,920
+and so we're going to assign minus 15 to intArray zero
+129
+
+129
+
+00:05:45,920  -->  00:05:47,140
+and that's exactly what we want.
+130
+
+130
+
+00:05:47,140  -->  00:05:48,990
+It'll put minus 15 at the front
+131
+
+131
+
+00:05:48,990  -->  00:05:51,800
+and we've shifted 20 and 35 over one.
+132
+
+132
+
+00:05:51,800  -->  00:05:54,180
+And so that's how this implementation works
+133
+
+133
+
+00:05:54,180  -->  00:05:57,790
+and we have finished coding the implementation.
+134
+
+134
+
+00:05:57,790  -->  00:05:59,400
+And so the outer loop is the one
+135
+
+135
+
+00:05:59,400  -->  00:06:01,780
+that's growing the sorted partition by one,
+136
+
+136
+
+00:06:01,780  -->  00:06:03,680
+and the inner loop is that one that's looking
+137
+
+137
+
+00:06:03,680  -->  00:06:06,910
+for the correct position to insert each element
+138
+
+138
+
+00:06:06,910  -->  00:06:08,600
+and is doing the shifting.
+139
+
+139
+
+00:06:08,600  -->  00:06:11,683
+So let's run this to make sure this actually works.
+140
+
+140
+
+00:06:13,080  -->  00:06:17,100
+And indeed it does, we get minus 22, minus 15,
+141
+
+141
+
+00:06:17,100  -->  00:06:21,220
+one, seven, 20, 35, and 55.
+142
+
+142
+
+00:06:21,220  -->  00:06:25,070
+I'll just close that off, and so that is insertion sort.
+143
+
+143
+
+00:06:25,070  -->  00:06:28,170
+It works by taking each element and inserting it
+144
+
+144
+
+00:06:28,170  -->  00:06:30,430
+into its correct position in the sorted partition
+145
+
+145
+
+00:06:30,430  -->  00:06:32,870
+and at the end, when we've gone through all the elements,
+146
+
+146
+
+00:06:32,870  -->  00:06:36,450
+the entire array is the sorted partition.
+147
+
+147
+
+00:06:36,450  -->  00:06:37,550
+And so we're done.
+148
+
+148
+
+00:06:37,550  -->  00:06:39,040
+Okay, now as you can imagine,
+149
+
+149
+
+00:06:39,040  -->  00:06:42,200
+sometimes this will involve a lot of shifting, for example,
+150
+
+150
+
+00:06:42,200  -->  00:06:44,480
+I guess I should remove that comma there, I'll do that,
+151
+
+151
+
+00:06:44,480  -->  00:06:48,390
+for example, in our array, the smallest value in the array
+152
+
+152
+
+00:06:48,390  -->  00:06:50,160
+is right at the end of the array.
+153
+
+153
+
+00:06:50,160  -->  00:06:52,210
+So when we finally hit minus 22,
+154
+
+154
+
+00:06:52,210  -->  00:06:54,370
+we're gonna have to do a lot of shifting,
+155
+
+155
+
+00:06:54,370  -->  00:06:56,650
+we're gonna have to shift every other element
+156
+
+156
+
+00:06:56,650  -->  00:07:00,660
+in the array to the right, to make room for minus 22.
+157
+
+157
+
+00:07:00,660  -->  00:07:03,130
+There can be a lot of shifting with this algorithm
+158
+
+158
+
+00:07:03,130  -->  00:07:07,410
+and so perhaps there is way to improve this algorithm,
+159
+
+159
+
+00:07:07,410  -->  00:07:09,740
+and there is, and we're going to look at that
+160
+
+160
+
+00:07:09,740  -->  00:07:11,883
+in the next video, I'll see you there.

@@ -1,0 +1,770 @@
+
+Q. 1
+Which colour is used to indicate instance methods in the standard "javadoc" format documentation:
+blue 
+red 
+purple 
+orange
+Select the most appropriate answer.
+Q. 2
+What is the correct ordering for the import, class and package declarations when found in a single file?
+package, import, class 
+class, import, package 
+import, package, class 
+package, class, import
+Select the most appropriate answer.
+Q. 3
+Which methods can be legally applied to a string object?
+equals(String) 
+equals(Object) 
+trim() 
+round() 
+toString()
+Select all correct answers.
+Q. 4
+What is the parameter specification for the public static void main method?
+String args [] 
+String [] args 
+Strings args [] 
+String args
+Select all correct answers.
+Q. 5
+What does the zeroth element of the string array passed to the public static void main method contain?
+The name of the program 
+The number of arguments 
+The first argument if one is present
+Select the most appropriate answer.
+Q. 6
+Which of the following are Java keywords?
+goto 
+malloc 
+extends 
+FALSE
+Select all correct answers
+Q. 7
+What will be the result of compiling the following code:
+public class Test {
+public static void main (String args []) {
+int age;
+age = age + 1;
+System.out.println("The age is " + age);
+}
+}
+Compiles and runs with no output 
+Compiles and runs printing out The age is 1 
+Compiles but generates a runtime error 
+Does not compile 
+Compiles but generates a compile time error
+Select the most appropriate answer.
+Q. 8
+Which of these is the correct format to use to create the literal char value a?
+‘a’ 
+"a" 
+new Character(a) 
+\000a
+Select the most appropriate answer.
+Q. 9
+What is the legal range of a byte integral type?
+0 - 65, 535 
+(–128) – 127 
+(–32,768) – 32,767 
+(–256) – 255
+Select the most appropriate answer.
+Q. 10
+Which of the following is illegal:
+int i = 32; 
+float f = 45.0; 
+double d = 45.0;
+Select the most appropriate answer.
+Q. 11
+What will be the result of compiling the following code:
+public class Test {
+static int age;
+public static void main (String args []) {
+age = age + 1;
+System.out.println("The age is " + age);
+}
+}
+Compiles and runs with no output 
+Compiles and runs printing out The age is 1 
+Compiles but generates a runtime error 
+Does not compile 
+Compiles but generates a compile time error
+Select the most appropriate answer.
+Q. 12
+Which of the following are correct?
+128 >> 1 gives 64 
+128 >>> 1 gives 64 
+128 >> 1 gives –64 
+128 >>> 1 gives –64
+Select all correct answers
+Q. 13
+Which of the following return true?
+"john" == "john" 
+"john".equals("john") 
+"john" = "john" 
+"john".equals(new Button("john"))
+Select all correct answers.
+Q. 14
+Which of the following do not lead to a runtime error?
+"john" + " was " + " here" 
+"john" + 3 
+3 + 5 
+5 + 5.5
+Select all correct answers.
+Q. 15
+Which of the following are so called "short circuit" logical operators?
+& 
+|| 
+&& 
+|
+Select all correct answers.
+Q. 16
+Which of the following are acceptable?
+Object o = new Button("A"); 
+Boolean flag = true; 
+Panel p = new Frame(); 
+Frame f = new Panel(); 
+Panel p = new Applet();
+Select all correct answers.
+Q. 17
+What is the result of compiling and running the following code:
+public class Test {
+static int total = 10;
+public static void main (String args []) {
+new Test();
+}
+public Test () {
+System.out.println("In test");
+System.out.println(this);
+int temp = this.total;
+if (temp > 5) {
+System.out.println(temp);
+}
+}
+}
+The class will not compile 
+The compiler reports and error at line 2 
+The compiler reports an error at line 9 
+The value 10 is one of the elements printed to the standard output 
+The class compiles but generates a runtime error
+Select all correct answers.
+Q 18
+Which of the following is correct:
+String temp [] = new String {"j" "a" "z"}; 
+String temp [] = { "j " " b" "c"}; 
+String temp = {"a", "b", "c"}; 
+String temp [] = {"a", "b", "c"};
+Select the most appropriate answer.
+Q. 19
+What is the correct declaration of an abstract method that is intended to be public:
+public abstract void add(); 
+public abstract void add() {} 
+public abstract add(); 
+public virtual add();
+Select the most appropriate answer.
+Q. 20
+Under what situations do you obtain a default constructor?
+When you define any class 
+When the class has no other constructors 
+When you define at least one constructor
+Select the most appropriate answer.
+Q. 21
+Given the following code:
+public class Test {
+…
+}
+Which of the following can be used to define a constructor for this class:
+public void Test() {…} 
+public Test() {…} 
+public static Test() {…} 
+public static void Test() {…}
+Select the most appropriate answer.
+Q. 22
+Which of the following are acceptable to the Java compiler:
+if (2 == 3) System.out.println("Hi"); 
+if (2 = 3) System.out.println("Hi"); 
+if (true) System.out.println("Hi"); 
+if (2 != 3) System.out.println("Hi"); 
+if (aString.equals("hello")) System.out.println("Hi");
+Select all correct answers.
+Q. 23
+Assuming a method contains code which may raise an Exception (but not a RuntimeException), what is the correct way for a method to indicate that it expects the caller to handle that exception:
+throw Exception 
+throws Exception 
+new Exception 
+Don't need to specify anything
+Select the most appropriate answer.
+Q. 24
+What is the result of executing the following code, using the parameters 4 and 0:
+public void divide(int a, int b) {
+try {
+int c = a / b;
+} catch (Exception e) {
+System.out.print("Exception ");
+} finally {
+System.out.println("Finally");
+}
+Prints out: Exception Finally 
+Prints out: Finally 
+Prints out: Exception 
+No output
+Select the most appropriate answer.
+Q.25
+Which of the following is a legal return type of a method overloading the following method:
+public void add(int a) {…}
+void 
+int 
+Can be anything
+Select the most appropriate answer.
+Q.26 
+Which of the following statements is correct for a method which is overriding the following method:
+public void add(int a) {…}
+the overriding method must return void 
+the overriding method must return int 
+the overriding method can return whatever it likes
+Select the most appropriate answer.
+Q. 27 
+Given the following classes defined in separate files:
+class Vehicle {
+public void drive() {
+System.out.println("Vehicle: drive");
+}
+}
+class Car extends Vehicle {
+public void drive() {
+System.out.println("Car: drive");
+}
+}
+public class Test {
+public static void main (String args []) {
+Vehicle v;
+Car c;
+v = new Vehicle();
+c = new Car();
+v.drive();
+c.drive();
+v = c;
+v.drive();
+}
+}
+What will be the effect of compiling and running this class Test?
+Generates a Compiler error on the statement v= c; 
+Generates runtime error on the statement v= c; 
+Prints out: 
+Vehicle: drive
+Car: drive
+Car: drive
+Prints out:
+Vehicle: drive
+Car: drive
+Vehicle: drive
+Select the most appropriate answer.
+Q. 28
+Where in a constructor, can you place a call to a constructor defined in the super class?
+Anywhere 
+The first statement in the constructor 
+The last statement in the constructor 
+You can't call super in a constructor
+Select the most appropriate answer.
+Q. 29
+Which variables can an inner class access from the class which encapsulates it?
+All static variables 
+All final variables 
+All instance variables 
+Only final instance variables 
+Only final static variables
+Select all correct answers.
+Q. 30
+What class must an inner class extend:
+The top level class 
+The Object class 
+Any class or interface 
+It must extend an interface
+Select the most appropriate answer.
+Q. 31
+In the following code, which is the earliest statement, where the object originally held in e, may be garbage collected:
+public class Test { 
+public static void main (String args []) { 
+Employee e = new Employee("Bob", 48); 
+e.calculatePay(); 
+System.out.println(e.printDetails()); 
+e = null; 
+e = new Employee("Denise", 36); 
+e.calculatePay(); 
+System.out.println(e.printDetails()); 
+} 
+}
+Line 10 
+Line 11 
+Line 7 
+Line 8 
+Never
+Select the most appropriate answer.
+Q. 32
+What is the name of the interface that can be used to define a class that can execute within its own thread?
+Runnable 
+Run 
+Threadable 
+Thread 
+Executable
+Select the most appropriate answer.
+Q. 33
+What is the name of the method used to schedule a thread for execution?
+init(); 
+start(); 
+run(); 
+resume(); 
+sleep();
+Select the most appropriate answer.
+Q. 34
+Which methods may cause a thread to stop executing?
+sleep(); 
+stop(); 
+yield(); 
+wait(); 
+notify(); 
+notifyAll() 
+synchronized()
+Select all correct answers.
+Q. 35
+Write code to create a text field able to display 10 characters (assuming a fixed size font) displaying the initial string "hello":
+:
+Q. 36
+Which of the following methods are defined on the Graphics class:
+drawLine(int, int, int, int) 
+drawImage(Image, int, int, ImageObserver) 
+drawString(String, int, int) 
+add(Component); 
+setVisible(boolean); 
+setLayout(Object);
+Select all correct answers.
+Q. 37
+Which of the following layout managers honours the preferred size of a component:
+CardLayout 
+FlowLayout 
+BorderLayout 
+GridLayout
+Select all correct answers.
+Q. 38
+Given the following code what is the effect of a being 5:
+public class Test {
+public void add(int a) {
+loop: for (int i = 1; i < 3; i++){
+for (int j = 1; j < 3; j++) {
+if (a == 5) {
+break loop;
+}
+System.out.println(i * j);
+}
+}
+}
+}
+Generate a runtime error 
+Throw an ArrayIndexOutOfBoundsException 
+Print the values: 1, 2, 2, 4 
+Produces no output
+Select the most appropriate answer.
+Q. 39
+What is the effect of issuing a wait() method on an object
+If a notify() method has already been sent to that object then it has no effect 
+The object issuing the call to wait() will halt until another object sends a notify() or notifyAll() method 
+An exception will be raised 
+The object issuing the call to wait() will be automatically synchronized with any other objects using the receiving object.
+Select the most appropriate answer.
+Q. 40
+The layout of a container can be altered using which of the following methods:
+setLayout(aLayoutManager); 
+addLayout(aLayoutManager); 
+layout(aLayoutManager); 
+setLayoutManager(aLayoutManager);
+Select all correct answers.
+Q. 41
+Using a FlowLayout manager, which is the correct way to add elements to a container:
+add(component); 
+add("Center", component); 
+add(x, y, component); 
+set(component);
+Select the most appropriate answer.
+Q. 42
+Given that a Button can generate an ActionEvent which listener would you expect to have to implement, in a class which would handle this event?
+FocusListener 
+ComponentListener 
+WindowListener 
+ActionListener 
+ItemListener
+Select the most appropriate answer.
+Q. 43
+Which of the following, are valid return types, for listener methods:
+boolean 
+the type of event handled 
+void 
+Component
+Select the most appropriate answer.
+Q. 44
+Assuming we have a class which implements the ActionListener interface, which method should be used to register this with a Button?
+addListener(*); 
+addActionListener(*); 
+addButtonListener(*); 
+setListener(*);
+Select the most appropriate answer.
+Q. 45
+In order to cause the paint(Graphics) method to execute, which of the following is the most appropriate method to call:
+paint() 
+repaint() 
+paint(Graphics) 
+update(Graphics) 
+None – you should never cause paint(Graphics) to execute
+Select the most appropriate answer.
+Q. 46
+Which of the following illustrates the correct way to pass a parameter into an applet:
+<applet code=Test.class age=33 width=100 height=100> 
+<param name=age value=33> 
+<applet code=Test.class name=age value=33 width=100 height=100> 
+<applet Test 33>
+Select the most appropriate answer.
+Q. 47
+Which of the following correctly illustrate how an InputStreamReader can be created:
+new InputStreamReader(new FileInputStream("data")); 
+new InputStreamReader(new FileReader("data")); 
+new InputStreamReader(new BufferedReader("data")); 
+new InputStreamReader("data"); 
+new InputStreamReader(System.in);
+Select all correct answers.
+Q. 48
+What is the permanent effect on the file system of writing data to a new FileWriter("report"), given the file report already exists?
+The data is appended to the file 
+The file is replaced with a new file 
+An exception is raised as the file already exists 
+The data is written to random locations within the file
+Select the most appropriate answer.
+Q. 49
+What is the effect of adding the sixth element to a vector created in the following manner:
+new Vector(5, 10);
+An IndexOutOfBounds exception is raised. 
+The vector grows in size to a capacity of 10 elements 
+The vector grows in size to a capacity of 15 elements 
+Nothing, the vector will have grown when the fifth element was added
+Select the most appropriate answer.
+Q. 50
+What is the result of executing the following code when the value of x is 2:
+switch (x) {
+case 1:
+System.out.println(1);
+case 2:
+case 3:
+System.out.println(3);
+case 4:
+System.out.println(4);
+}
+Nothing is printed out 
+The value 3 is printed out 
+The values 3 and 4 are printed out 
+The values 1, 3 and 4 are printed out
+Select the most appropriate answer.
+Q. 51
+Consider the following example:
+class First {
+public First (String s) {
+System.out.println(s);
+}
+}
+public class Second extends First {
+public static void main(String args []) {
+new Second();
+}
+}
+What is the result of compiling and running the Second class?
+Nothing happens 
+A string is printed to the standard out 
+An instance of the class First is generated 
+An instance of the class Second is created 
+An exception is raised at runtime stating that there is no null parameter constructor in class First. 
+The class second will not compile as there is no null parameter constructor in the class First
+Select the most appropriate answer.
+Q. 52 What is the result of executing the following fragment of code:
+boolean flag = false;
+if (flag = true) {
+System.out.println("true");
+} else {
+System.out.println("false");
+}
+true is printed to standard out 
+false is printed to standard out 
+An exception is raised 
+Nothing happens
+Select the most appropriate answer.
+Q. 53
+Consider the following classes:
+public class Test {
+public static void test() {
+this.print();
+}
+public static void print() {
+System.out.println("Test");
+}
+public static void main(String args []) {
+test();
+}
+}
+What is the result of compiling and running this class?
+The string Test is printed to the standard out. 
+A runtime exception is raised stating that an object has not been created. 
+Nothing is printed to the standard output. 
+An exception is raised stating that the method test cannot be found. 
+An exception is raised stating that the variable this can only be used within an instance. 
+The class fails to compile stating that the variable this is undefined.
+Select all correct answers.
+Q. 54
+Examine the following class definition:
+public class Test {
+public static void test() {
+print();
+}
+public static void print() {
+System.out.println("Test");
+}
+public void print() {
+System.out.println("Another Test");
+}
+}
+What is the result of compiling this class:
+A successful compilation. 
+A warning stating that the class has no main method. 
+An error stating that there is a duplicated method. 
+An error stating that the method test() will call one or other of the print() methods.
+Select the most appropriate answer.
+Q. 55
+What is the result of compiling and executing the following Java class:
+public class ThreadTest extends Thread {
+public void run() {
+System.out.println("In run");
+suspend();
+resume();
+System.out.println("Leaving run");
+}
+public static void main(String args []) {
+(new ThreadTest()).start();
+}
+}
+Compilation will fail in the method main. 
+Compilation will fail in the method run. 
+A warning will be generated for method run. 
+The string "In run" will be printed to standard out. 
+Both strings will be printed to standard out. 
+Nothing will happen.
+Select the most appropriate answer.
+Q. 56
+Given the following sequence of Java statements
+StringBuffer sb = new StringBuffer("abc"); 
+String s = new String("abc"); 
+sb.append("def"); 
+s.append("def"); 
+sb.insert(1, "zzz"); 
+s.concat(sb); 
+s.trim();
+Which of the following statements are true:
+The compiler would generate an error for line 1. 
+The compiler would generate an error for line 2. 
+The compiler would generate an error for line 3. 
+The compiler would generate an error for line 4. 
+The compiler would generate an error for line 5. 
+The compiler would generate an error for line 6. 
+The compiler would generate an error for line 7.
+Select all correct answers.
+Q. 57
+What is the result of executing the following Java class:
+import java.awt.*;
+public class FrameTest extends Frame {
+public FrameTest() {
+add (new Button("First"));
+add (new Button("Second"));
+add (new Button("Third"));
+pack();
+setVisible(true);
+}
+public static void main(String args []) {
+new FrameTest();
+}
+}
+Select from the following options:
+Nothing happens. 
+Three buttons are displayed across a window. 
+A runtime exception is generated (no layout manager specified). 
+Only the "first" button is displayed. 
+Only the "second" button is displayed. 
+Only the "third" button is displayed.
+Select the most appropriate answer.
+Q. 58
+Consider the following tags and attributes of tags:
+CODEBASE 
+ALT 
+NAME 
+CLASS 
+JAVAC 
+HORIZONTALSPACE 
+VERTICALSPACE 
+WIDTH 
+PARAM 
+JAR
+Which of the above can be used within the <APPLET> and </APPLET> tags?
+line 1, 2, 3 
+line 2, 5, 6, 7 
+line 3, 4, 5 
+line 8, 9, 10 
+line 8, 9
+Select all correct answers.
+Q. 59
+Which of the following is a legal way to construct a RandomAccessFile:
+RandomAccessFile("data", "r"); 
+RandomAccessFile("r", "data"); 
+RandomAccessFile("data", "read"); 
+RandomAccessFile("read", "data");
+Select the most appropriate answer.
+Q. 60
+Carefully examine the following code:
+public class StaticTest {
+static {
+System.out.println("Hi there");
+}
+public void print() {
+System.out.println("Hello");
+}
+public static void main(String args []) {
+StaticTest st1 = new StaticTest();
+st1.print();
+StaticTest st2 = new StaticTest();
+st2.print();
+}
+}
+When will the string "Hi there" be printed?
+Never. 
+Each time a new instance is created. 
+Once when the class is first loaded into the Java virtual machine. 
+Only when the static method is called explicitly.
+Select the most appropriate answer.
+Q. 61
+Consider the following program:
+public class Test { public static void main (String args []) { boolean a = false; if (a = true)
+System.out.println("Hello");
+Else
+System.out.println("Goodbye");
+}
+}
+What is the result:
+A. Program produces no output but terminates correctly.
+B. Program does not terminate.
+C. Prints out "Hello"
+D. Prints out "Goodbye"
+Select the most appropriate answer.
+Q. 62
+Examine the following code which includes an inner class:
+public final class Test4 implements A {
+class Inner {
+void test() {
+if (Test4.this.flag); {
+sample();
+}
+} 
+}
+private boolean flag = false;
+public void sample() {
+System.out.println("Sample");
+}
+public Test4() {
+(new Inner()).test();
+}
+public static void main(String args []) {
+new Test4();
+} 
+}
+What is the result:
+A. Prints out "Sample"
+B. Program produces no output but terminates correctly.
+C. Program does not terminate.
+D. The program will not compile
+Select the most appropriate answer.
+Q. 63
+Carefully examine the following class:
+public class Test5 { public static void main (String args []) { /* This is the start of a comment
+if (true) {
+Test5 = new test5();
+System.out.println("Done the test");
+}
+/* This is another comment */
+System.out.println ("The end");
+}
+}
+What is the result:
+A. Prints out "Done the test" and nothing else.
+B. Program produces no output but terminates correctly.
+C. Program does not terminate.
+D. The program will not compile.
+E. The program generates a runtime exception.
+F. The program prints out "The end" and nothing else.
+G. The program prints out "Done the test" and "The end"
+Select the most appropriate answer.
+Q. 64
+The following code defines a simple applet:
+import java.applet.Applet;
+import java.awt.*;
+public class Sample extends Applet {
+private String text = "Hello World";
+public void init() {
+add(new Label(text));
+}
+public Sample (String string) {
+text = string;
+}
+}
+It is accessed form the following HTML page:
+<html>
+<title>Sample Applet</title>
+<body>
+<applet code="Sample.class" width=200 height=200></applet>
+</body>
+</html>
+What is the result of compiling and running this applet:
+A. Prints "Hello World".
+B. Generates a runtime error.
+C. Does nothing.
+D. Generates a compile time error.
+Select the most appropriate answer.
+Q. 65
+Examine the following code:
+public class Calc {
+public static void main (String args []) {
+int total = 0;
+for (int i = 0, j = 10; total > 30; ++i, --j) {
+System.out.println(" i = " + i + " : j = " + j);
+total += (i + j);
+}
+System.out.println("Total " + total);
+}
+}
+Does this code:
+A. Produce a runtime error
+B. Produce a compile time error
+C. Print out "Total 0"
+D. Generate the following as output:
+i = 0 : j = 10
+i = 1 : j = 9
+i = 2 : j = 8
+Total 30
+Please select the most appropriate answer.
+
+Answers to Java Certification Mock Exam
+1. B	2. A	3. A, B, C, E	4. A, B	5. C	
+6. A, C	7. D	8. A	9. B	10. B	
+11. B	12. A,B	13. A, B	14. A, B, C, D	15.B, C	
+16. A, E	17. D	18. D	19. A	20. B	
+21. B	22. A, C, D, E	23. B	24. A	25. C	
+26. A	27. C	28. B	29. A, B, C	30. C	
+31. C	32. A	33. B	34. A, B, C, D	35. new TextField("hello", 10)	
+36. A, B, C	37. B	38. D	39. B	40. A	
+41. A	42. D	43. C	44. B	45. B	
+46. B	47. A, E	48. B	49. C	50. C	
+51. F	52. A	53. F	54. C	55. D	
+56. D, F	57. F	58. A, E	59. A	60. C	
+61. C	62. A	63. F	64. B	65. C	
+

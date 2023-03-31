@@ -1,0 +1,772 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\ul\b\f0\fs22\lang9 SET 2:\par
+3)Print the Pattern 3 4 33 34 43 44 333 334.....\ulnone\b0\par
+#include<stdio.h>\par
+int main()\par
+\{\par
+     int n,k=1,a[10000],i;\par
+     a[0]=3;a[1]=4;\par
+     scanf("%d",&n);\par
+    for(i=0;i<n;i++)\par
+   \{\par
+    a[++k]=(a[i]*10)+3;\par
+    a[++k]=(a[i]*10)+4;\par
+    \}\par
+   for(i=0;i<n;i++)\par
+   printf("%d ",a[i]);\par
+return 0;\par
+\}\par
+\ul\b SET 2:\ulnone\b0\par
+\ul\b 2)Alternate sorting\ulnone\b0\par
+Alternate sorting: Given an array of integers, rearrange the array in such a way that the first element is first maximum and second element is first minimum.\par
+    Eg.) Input  : \{1, 2, 3, 4, 5, 6, 7\}\par
+         Output : \{7, 1, 6, 2, 5, 3, 4\} \par
+#include<stdio.h>\par
+#include<stdlib.h>\par
+int main()\par
+\{\par
+ int i,n,t,j;\par
+ scanf("%d",&n);\par
+ int *a=(int *)malloc(n*sizeof(int)); // creating dynamic array \par
+  for(i=0;i<n;i++)\par
+  \{\par
+   scanf("%d",&a[i]);\par
+  \}\par
+  //sorting\par
+  for(i=0;i<n;i++)\par
+  \{\par
+   for(j=0;j<n;j++)\par
+   \{ \par
+     if(a[i]<a[j])\par
+  \{ \par
+   t=a[i];\par
+   a[i]=a[j];\par
+   a[j]=t;\par
+  \}\par
+   \}\par
+  \}\par
+  t=n-1;j=0;\par
+  //printing alternate min max\par
+  for(i=0;i<n;i++)\par
+  \{  \par
+   if(i%2!=0)\{ \par
+    printf("%d ",a[j] ); ++j;\}\par
+    else\{\par
+    printf("%d ",a[t] ); --t;\}\par
+  \}\par
+  \par
+ return 0;\par
+\}\par
+\ul\b SET 1:\ulnone\b0\par
+\ul\b 1) Print the word with odd letters as\ulnone\b0  \par
+C program to print X pattern\par
+\par
+#include<stdio.h>\par
+#include<string.h>\par
+int main()\par
+\{\par
+  int i,j;\par
+  char a[50];\par
+  scanf("%s",a);\par
+  int t=strlen(a)-1;     //set right side diagonal start value\par
+  for(i=0;i<strlen(a);i++)\par
+  \{\par
+     for(j=0;j<strlen(a);j++)\par
+     \{\par
+          if(i==j&&j==t)\{\par
+               printf("%c",a[i]);--t;   // to print mid value\par
+                \}\par
+          else if (i==j)\{\par
+               printf("%c",a[i]);   // to print left to right diagonal\par
+                  \}\par
+        else if(j==t&&j!=i)\{\par
+               printf("%c",a[t]);--t;\} // to print right to left diagonal\par
+        else\par
+               printf(" ");          // to print spaces between spaces\par
+    \}\par
+ printf("\\n");    //   to print on new line\par
+ \}\par
+ return 0;\par
+ \}\par
+\ul\b SET 8:\ulnone\b0\par
+\ul\b 4) Spiral printing.\ulnone\b0  \par
+O/P \par
+4444444 \par
+4333334 \par
+4322234 \par
+4321234 \par
+4322234 \par
+4333334 \par
+4444444\par
+Write a C program to print circular pattern for a given integer.\par
+Write a C program to print the following pattern for a given integer.\par
+Sample Input 1:\par
+4\par
+Sample Output 1:\par
+4444444\par
+4333334\par
+4322234\par
+4321234\par
+4322234\par
+4333334\par
+4444444\par
+\par
+                                       C-Solution\par
+#include<stdio.h>\par
+#include<stdlib.h>\par
+int findmax(int a,int b)\par
+\{\par
+    if(a>b)return a;\par
+    else return b;\par
+\}\par
+int main()\par
+\{\par
+  int n,i,j;\par
+  scanf("%d",&n);\par
+  int m=(n*2)-1;\par
+for(i=0;i<m;i++)\par
+ \{\par
+  for(j=0;j<m;j++)\par
+   \{\par
+     printf("%d",1+findmax(abs(n-i-1),abs(n-j-1)));\par
+   \}printf("\\n");\par
+ \}\par
+    return 0;\par
+\}\par
+\ul\b SET 1:\ulnone\b0\par
+\b 2)Sort the numbers based on the weight in decreasing order\par
+Number Weight\par
+Given a set of numbers like <10, 36, 54,89,12> write a program to find sum of weights based on the following conditions\par
+    1. 5 if a perfect square\par
+    2. 4 if multiple of 4 and divisible by 6\par
+    3. 3 if even number\b0\par
+\par
+Print the output as follows.\par
+(10,its_weight)(36,its weight)(89,its weight)\par
+\par
+Note: Sort the numbers based on the weight in decreasing order. If 2 weights are same, display the numbers based on increasing order.\par
+Sample Input:\par
+5\par
+10 36 54 89 12\par
+Sample Output:\par
+(36,12)(12,7)(10,3)(54,3)(89,0)\par
+\par
+                                           C-Solution \par
+#include<stdio.h>\par
+#include<math.h>\par
+#include<stdlib.h>\par
+int main()\par
+\{\par
+ int n,i,j,t1,t2;\par
+ scanf("%d",&n);\par
+int *a=(int *)malloc(n*sizeof(int));\par
+int *b=(int *)calloc(n,sizeof(int));   \par
+ for(i=0;i<n;i++)\par
+ \{\par
+  scanf("%d",&a[i]);\par
+ \}\par
+\par
+ for(i=0;i<n;i++)\par
+ \{\par
+    if(sqrt(a[i])*sqrt(a[i])==a[i])\par
+    \{\par
+        b[i]+=5;\par
+    \}\par
+    if(a[i]%4==0&&a[i]%6==0)\par
+    \{\par
+        b[i]+=4;\par
+     \}\par
+    if(a[i]%2==0)\par
+    \{\par
+        b[i]+=3;\par
+    \}\par
+ \}\par
+ for(i=0;i<n;i++)\par
+ \{\par
+     for(j=0;j<n;j++)\par
+    \{\par
+         if(b[i]<b[j])\par
+         \{\par
+             t1=a[i];t2=b[i];\par
+             a[i]=a[j];b[i]=b[j];\par
+             a[j]=t1;b[j]=t2;\par
+         \}\par
+         else if(b[i]==b[j])\par
+         \{\par
+            t1=a[i];a[i]=a[j];a[j]=t1;\par
+         \}\par
+    \}\par
+ \}\par
+ for(i=n-1;i>=0;i--)\par
+ \{\par
+    printf("(%d,%d)",a[i],b[i]);\par
+ \}\par
+return 0;\par
+ \}\par
+\ul\b SET 3:\par
+2)\ulnone\b0\par
+\b Write a program to sort the elements in odd positions in descending order and elements in ascending order\par
+Eg 1: Input: 13,2 4,15,12,10,5\par
+        Output: 13,2,12,10,5,15,4\par
+Eg 2: Input: 1,2,3,4,5,6,7,8,9\par
+        Output: 9,2,7,4,5,6,3,8,1 \par
+\b0 #include<stdio.h>\par
+int main()\par
+\{\par
+    int n,i,k=0,j,t=0,t1;\par
+    scanf("%d",&n);\par
+    int a[n],b[n/2],c[n/2];\par
+    for(i=0;i<n;i++)\par
+    \{\par
+        scanf("%d",&a[i]);\par
+        if(i%2==0)\par
+        \{b[k]=a[i];++k;\}//printf("%d ",a[i]);\par
+        else\par
+        \{c[t]=a[i];++t;\} \par
+    \}\par
+    for(i=0;i<t;i++)\par
+     for(j=0;j<t;j++)\par
+          if(c[i]<c[j])\par
+           \{\par
+               t1=c[i];\par
+               c[i]=c[j];\par
+               c[j]=t1;\par
+     for(i=0;i<k;i++)\par
+      for(j=0;j<k;j++)\par
+         if(b[i]>b[j])\par
+           \{\par
+               t=b[i];\par
+               b[i]=b[j];\par
+               b[j]=t;\par
+           \}   \par
+   k=0;t=0;\par
+    for(i=0;i<n;i++)\par
+    \{\par
+        if(i%2==0)\par
+           printf("%d ",b[k]);++k;\par
+       else\par
+            printf("%d ",c[t++]);\par
+    \}\par
+    return 0;\par
+\}\par
+\ul\b SET 1:\ulnone\b0\par
+\b 3)Search for substring in two dimensional array\par
+Save the string \ldblquote WELCOMETOZOHOCORPORATION\rdblquote  in a two dimensional array and search for substring like \ldblquote too\rdblquote  in the two dimensional string both from left to right and from top to bottom.\par
+W E L C O\par
+M E T O Z\par
+O H O C O\par
+R P O R A\par
+T I O N   \par
+And print the start and ending index as\par
+Start index : <1,2>\par
+End index: <3, 2>\par
+\b0 #include<stdio.h>\par
+#include<string.h>\par
+ int i,j,cols,k=-1;\par
+ char a[50],b[50][50],t=0,search[50]; \par
+void searchword(char b[50][50],char search[50],int i1,int j1 )  //searching given substring\par
+\{ \par
+ int i=0,j=j1,end1,end2,found=0;\par
+  for(i=0;i<strlen(search);i++)\par
+  \{\par
+     if(b[i1][j1]==search[i])\{//printf("%c",search[i]);\par
+        end1=i1;end2=j1;++j1;++found;\par
+     \}\par
+     else \{\par
+     break;\}\par
+  \}\par
+     if(found==strlen(search))\par
+     \{    printf("start index : <%d,%d>\\n",i1+1,j+1);\par
+          printf("end index   : <%d,%d>\\n",end1+1,end2+1);found=0;\par
+           \} j1=j;j=i1;found=0;\par
+  for(i=0;i<strlen(search);i++)\par
+  \{\par
+    if(b[i1][j1]==search[i])\{\par
+     end1=i1;end2=j1;++i1;++found;\}\par
+    else \{break;  \}\par
+  \}     \par
+  if(found==strlen(search))\par
+   \{ printf("start index : <%d,%d>\\n",j+1,j1+1);\par
+     printf("end index   : <%d,%d>\\n",end1+1,end2+1);found=0;\} \par
+\}\par
+int main()\par
+\{\par
+ scanf("%s",a);       // input string \par
+ scanf("%d",&cols);   //column width\par
+ scanf("%s",search);   //substring\par
+  for(i=0;i<=strlen(a)/cols;i++)\par
+  \{\par
+    for(j=0;j<cols;j++)\par
+    \{  \par
+        b[i][j]=a[++k];printf("%c ",b[i][j]);\par
+    \}\par
+printf("\\n");\par
+  \}\par
+ k=0;\par
+ for(i=0;i<=strlen(a)/cols;i++)\par
+ \{\par
+     for(j=0;j<cols;j++)\par
+     \{\par
+         if(b[i][j]==search[0])\par
+         \{\par
+             searchword(b,search,i,j);   // pass 1st indexes present in given matrix\par
+         \}\par
+     \}\par
+ \}\par
+ return 0;\par
+ \}\par
+\ul\b SET 1:\ulnone\b0\par
+\b 4)\par
+The first line of input contains an integer T denoting the no of test cases. Then T test cases follow. Each test case contains 9*9 space separated values of the matrix mat[][] representing an incomplete Sudoku state where a 0 represents empty block.\par
+\par
+Output:\par
+For each test case in a new line print the space separated values of the solution of the the sudoku.\par
+\b0\par
+Constraints:\par
+1<=T<=10\par
+0<=mat[]<=9\par
+\par
+Example:\par
+Input:\par
+1\par
+3 0 6 5 0 8 4 0 0 5 2 0 0 0 0 0 0 0 0 8 7 0 0 0 0 3 1 0 0 3 0 1 0 0 8 0 9 0 0 8 6 3 0 0 5 0 5 0 0 9 0 6 0 0 1 3 0 0 0 0 2 5 0 0 0 0 0 0 0 0 7 4 0 0 5 2 0 6 3 0 0\par
+\par
+Output:\par
+3 1 6 5 7 8 4 9 2 5 2 9 1 3 4 7 6 8 4 8 7 6 2 9 5 3 1 2 6 3 4 1 5 9 8 7 9 7 4 8 6 3 1 2 5 8 5 1 7 9 2 6 4 3 1 3 8 9 4 7 2 5 6 6 9 2 3 5 1 8 7 4 7 4 5 2 8 6 3 1 9 \par
+                                                C-Solution\par
+#include<stdio.h>\par
+#define UNASSIGNED 0\par
+#define N 9\par
+bool usedinrow(int grid[N][N],int row,int num)\par
+\{\par
+   for(int cols=0;cols<N;cols++)\par
+       if(grid[row][cols]==num)\par
+          return true;\par
+          return false;\par
+\}\par
+bool usedincols(int grid[N][N],int cols,int num)\par
+\{\par
+   for(int row=0;row<N;row++)\par
+           if(grid[row][cols]==num)\par
+            return true;\par
+            return false;\par
+\}\par
+bool checkbox(int grid[N][N],int srow,int scols,int num)\par
+\{\par
+   for(int row=0;row<3;row++)\par
+       for(int cols=0;cols<3;cols++)\par
+        if(grid[row+srow][cols+scols]==num)\par
+            return true;\par
+            return false;\par
+\}   \par
+bool findunassigned(int grid[N][N],int &row,int &cols)\par
+\{\par
+\par
+  for(row=0;row<N;row++)\par
+      for(cols=0;cols<N;cols++)\par
+       if(grid[row][cols]==UNASSIGNED)\par
+         return true;\par
+         return false;\par
+\}\par
+bool issafe(int grid[N][N],int row,int cols,int num)\par
+\{\par
+     return !usedinrow(grid,row,num)&&!usedincols(grid,cols,num)&&\par
+!checkbox(grid,row-row%3,cols-cols%3,num);\par
+\}\par
+bool solveSudoku(int grid[N][N])\par
+\{\par
+            int row,cols;\par
+    if(!findunassigned(grid,row,cols))\par
+      return true;\par
+      for(int num=1;num<=9;num++)\par
+      \{\par
+        if(issafe(grid,row,cols,num))\par
+        \{  grid[row][cols]=num;     \par
+       \par
+            if(solveSudoku(grid))\par
+            return true;\par
+           \par
+        grid[row][cols]=UNASSIGNED;\par
+        \}\par
+      \}\par
+      return false;\par
+\}\par
+void printGrid(int grid[N][N])\par
+\{\par
+    for (int row = 0; row < N; row++)\par
+      for (int col = 0; col < N; col++)\par
+         printf("%d ", grid[row][col]);   \par
+\}\par
+int main()\par
+\{   \par
+   int t,i,j,k,grid[N][N];\par
+   scanf("%d",&t);\par
+   for(i=0;i<t;i++)\par
+   \{ \par
+       for(j=0;j<N;j++)\par
+       \{\par
+           for(k=0;k<N;k++)\par
+           \{\par
+               scanf("%d",&grid[j][k]);\par
+           \}\par
+       \}\par
+    solveSudoku(grid);\par
+     printGrid(grid);\par
+     printf("\\n");   \par
+   \}\par
+    return 0;\par
+\} \par
+\ul\b SET 1:\ulnone\b0             \par
+\b 5)\par
+ Given a two dimensional array of string like \par
+<\rdblquote luke\rdblquote , \ldblquote shaw\rdblquote > \par
+<\rdblquote wayne\rdblquote , \ldblquote rooney\rdblquote > \par
+<\rdblquote rooney\rdblquote , \ldblquote ronaldo\rdblquote > \par
+<\rdblquote shaw\rdblquote , \ldblquote rooney\rdblquote > \par
+\b0 #include <string.h>\par
+#include <stdio.h>\par
+\par
+\par
+int main()\par
+char a[10][100],b[10][100],str[100];\par
+\{\par
+int num,k;\par
+scanf("%d",&num);\par
+scanf("%s",&str);\par
+for(int i=0;i<num;i++)\par
+\{\par
+scanf("%s%s",&a[i],&b[i]);\par
+if(strcmp(str,b[i]) == 0)\par
+k = i;\par
+\}\par
+int count = 0;\par
+for(int i=0;i<num;i++)\par
+\{\par
+if(strcmp(a[k],b[i]) == 0)\par
+count++;\par
+\}\par
+printf("%d",count);\par
+return 0;\par
+\par
+\}\par
+(or)\par
+\par
+#include<stdio.h>\par
+#include<string.h>\par
+\par
+int n;\par
+char name[20];\par
+struct reln\par
+\{\par
+char child[20];\par
+char father[20];\par
+\}r[10];\par
+int count=0;\par
+\par
+void countChildren(char name[])\par
+\{\par
+\par
+    int j;\par
+   for(j=0;j<n;j++)\par
+        \{\par
+        if(strcmp(name,r[j].father)==0)\par
+            \{\par
+            count++;\par
+            countChildren(r[j].child);\par
+            \}\par
+        \}\par
+    \}\par
+void main()\par
+\{\par
+ int i;\par
+printf("\\nEnter the number of inputs: ");\par
+scanf("%d",&n);\par
+    for(i=0;i<n;i++)\par
+    \{\par
+    scanf("%s",r[i].child);\par
+    scanf("%s",r[i].father);\par
+    \}\par
+printf("\\nEnter name of the one whose no. of grandchildren is needed: ");\par
+scanf("%s",name);\par
+for(i=0;i<n;i++)\par
+    \{\par
+    if(strcmp(r[i].father,name)==0)\par
+        countChildren(r[i].child);\par
+    \}\par
+\par
+printf("\\nNo .of grandchildren of %s=%d",name,count);\par
+\}\par
+scanf("%s",name);\par
+for(i=0;i<n;i++)\par
+    \{\par
+    if(strcmp(r[i].father,name)==0)\par
+        countChildren(r[i].child);\par
+    \}\par
+printf("\\nNo .of grandchildren of %s=%d",name,count);\par
+\}\par
+\ul\b SET 5:\ulnone\b0\par
+\b 1)\par
+Find New Friends in Social Network\par
+\par
+Input:\par
+3\par
+Mani 3 ram raj guna\par
+Ram 2 kumar Kishore\par
+Mughil 3 praveen Naveen Ramesh\par
+\par
+Output:\par
+Raj guna kumar Kishore praveen Naveen Ramesh\par
+\par
+\b0 #include<stdio.h>\par
+\par
+#include<string.h>\par
+#define N 10\par
+struct Node\{\par
+ char name[20];\par
+ char list[N][20];\par
+ int no;\par
+\}friends[N];\par
+\par
+void findFriend(int n)\par
+\{\par
+    int i,j,k,count,m;\par
+    for(i=0;i<n;i++)\par
+    \{\par
+        m = friends[i].no;\par
+      for(j=0;j<m;j++)\par
+      \{\par
+             for(k=count=0;k<n;k++)\par
+             \{\par
+                if( strcmpi(friends[i].list[j],friends[k].name) != 0)\par
+                 \{\par
+                  count++;\par
+                 \}\par
+            \}\par
+           if(count==n)\par
+          printf("%s ",friends[i].list[j]);\par
+       \}\par
+    \}\par
+ \}\par
+\par
+int main()\par
+\{\par
+int t,n,i,j;\par
+clrscr();\par
+scanf("%d",&t);\par
+       for(i=0;i<t;i++)\par
+      \{\par
+           scanf(" %s",friends[i].name);\par
+           scanf(" %d",&n);\par
+          friends[i].no = n;\par
+         for(j=0;j<n;j++)\par
+         \{\par
+            scanf(" %s",friends[i].list[j]);\par
+          \}\par
+      \}\par
+  findFriend(t);\par
+getch();\par
+\}\par
+\ul\b SET 2:\ulnone\b0\par
+\b 2) Remove unbalanced parentheses in a given expression. \par
+Eg.) Input : ((abc)((de)) \par
+Output : ((abc)(de)) \par
+Input : (((ab) \par
+Output : (ab) \par
+\b0 #include<stdio.h>\par
+int main()\{\par
+int len,ind,i,open=0,close=0,start,end;\par
+char str[1000];\par
+scanf("%s",str);\par
+len=strlen(str);\par
+for(start=0,end=len-1;start<len;start++,end--)\{\par
+    if(str[start]=='(')\par
+        open++;\par
+    else if(str[start]==')')\par
+        open--;\par
+    if(str[end]==')')\par
+        close++;\par
+    else if(str[end]=='(')\par
+        close--;\par
+    if(open<0)\{\par
+        str[start]=-1;\par
+        open=0;\par
+    \}\par
+    if(close<0)\{\par
+        str[end]=-1;\par
+        close=0;\par
+    \}\par
+\}\par
+for(ind=0;str[ind];ind++)\{\par
+    if(str[ind]!=-1)\{\par
+        printf("%c",str[ind]);\par
+    \}\par
+\}\par
+\}\par
+\ul\b SET 12:\par
+3)\ulnone Given an array and a threshold value k where k is used to divide each element of the array. Find the total number of divisions we get after dividing each element of the array by k. \par
+for example:\par
+A[ ] = 5 8 10 13 6 2 and k is 3\par
+Output will be 17\par
+\b0 #include <stdio.h>\par
+\par
+int main() \{\par
+    int t,n,s,k=0,i;\par
+    scanf("%d",&t);\par
+    while(t>0)\par
+    \{\par
+        k=0;\par
+        scanf("%d %d",&n,&s);\par
+        int a[n];\par
+        for(i=0;i<n;i++)\par
+        \{\par
+        scanf("%d",&a[i]);\par
+        if(a[i]%s==0)\par
+        k+=a[i]/s;\par
+        else\par
+        \{\par
+            k+=(a[i]/s)+1;\par
+        \}\par
+        \}\par
+        printf("%d\\n",k);\par
+        t--;\par
+    \}\par
+    return 0;\par
+\}\par
+\ul\b SET 3 :\ulnone\b0\par
+2)Write a program to give the following output for the given input.a1b10 (Decoding)\par
+Eg 1: Input: a1b10\par
+       Output: abbbbbbbbbb\par
+Eg: 2: Input: b3c6d15\par
+          Output: bbbccccccddddddddddddddd\par
+The number varies from 1 to 99.\par
+#include<stdio.h>\par
+#include<string.h>\par
+int main()\par
+\{\par
+    int n,i,j,count=0;\par
+    char a[50],ch;\par
+    scanf("%s",a);    \par
+    for(i=0;i<strlen(a);i++)\par
+    \{\par
+        if(a[i]>='0'&&a[i]<='9')\par
+        \{\par
+            count=(count*10)+(a[i]-'0');\par
+        \}\par
+        else if(count>0)\par
+        \{ count--;\par
+            for(j=0;j<count;j++)\par
+            \{\par
+                 printf("%c",ch);\par
+            \}count=0;\par
+        \}        \par
+        if(a[i]>'9')\par
+        \{\par
+            ch=a[i];printf("%c",a[i]);\par
+        \}\par
+     //   printf("%d\\n",i);\par
+        if(i==(strlen(a)-1))\par
+        \{--count;\par
+            for(j=0;j<count;j++)\par
+            \{\par
+                printf("%c",ch);\par
+            \}\par
+        \}\par
+    \}\par
+    \par
+    return 0;    \par
+\}\ul\b  \ulnone\par
+  1) \ul TRAIN RESERVATION BOOKING\ulnone          \par
+\b0 #include<stdio.h>\par
+struct train\par
+\{\par
+    int seats[100];\par
+    char t_name[30];\par
+    char dept_time[5];\par
+    char source[30];\par
+    char dest[30];\par
+    char t_id[5];\par
+\}t[4];\par
+void book(char nam[],char id[],char dt[],char src[],char dst[],int *s,int j)\par
+\{\par
+    int ch,nb,i,n,k=1;\par
+    while(k=1)\par
+    \{\par
+    printf("Enter ur choice:\\n1. Availability checking\\n 2. Booking\\n3. Cancellation\\n");\par
+    scanf("%d",&ch);\par
+    switch(ch)\par
+    \{\par
+        case 1:\par
+        \{\par
+            printf("1.Train Name:%s\\n 2.Train id:%s\\n3.Train Departure time:%s\\n 4.Source:%s\\n 5.Destination:%s\\n6.Availabe Seats:%d\\n",nam,id,dt,src,dst,*s);\par
+            for(i=0;i<*s;i++)\par
+            \{\par
+                if(t[j].seats[i]==0)\par
+                \{\par
+                    printf("%d   ",i);\par
+                \}\par
+            \}\par
+            break;\par
+        \}\par
+        case 2:\par
+        \{\par
+            printf("\\nEnter the number of seats");\par
+            scanf("%d",&nb);\par
+            printf("\\nEnter the seat numbers");\par
+            for(i=0;i<nb;i++)\par
+            \{\par
+                scanf("%d",&n);\par
+                t[j].seats[n]=1;\par
+            \}\par
+        break;\par
+        \}\par
+        case 3:\par
+        \{\par
+            printf("\\nEnter the number of seats to be cancelled");\par
+            scanf("%d",&nb);\par
+            printf("\\nEnter the seat numbers");\par
+            for(i=0;i<nb;i++)\par
+            \{\par
+                scanf("%d",&n);\par
+                t[j].seats[n]=0;\par
+            \}\par
+            break;\par
+        \}\par
+    \}\par
+    printf("\\nEnter 1 to continue");\par
+    scanf("%d",&k);\par
+    \}\par
+\}\par
+int main()\par
+\{\par
+    int i,j,st[4];\par
+    char nm[30];\par
+    for(j=0;j<4;j++)\par
+    \{\par
+        for(i=0;i<100;i++)\par
+        \{\par
+            t[j].seats[i]=0;\par
+        \}\par
+    \}\par
+    for(i=0;i<4;i++)\par
+    \{\par
+        scanf("%s %s %s %s %s %d",t[i].t_name,t[i].t_id,t[i].dept_time,t[i].source,t[i].dest,&st[i]);\par
+    \}\par
+    for(i=0;i<4;i++)\par
+    \{\par
+        printf("%s\\n %s\\n %s\\n %s\\n %s\\n %d\\n",t[i].t_name,t[i].t_id,t[i].dept_time,t[i].source,t[i].dest,st[i]);\par
+    \}\par
+    printf("\\nChoose the train");\par
+    scanf("%s",nm);\par
+    for(i=0;i<4;i++)\par
+    \{\par
+        if(strcmp(nm,t[i].t_name)==0)\par
+        \{\par
+                book(t[i].t_name,t[i].t_id,t[i].dept_time,t[i].source,t[i].dest,&st[i],i);\par
+                break;\par
+        \}\par
+    \}\par
+\}\b      \par
+   \par
+}
+ 
