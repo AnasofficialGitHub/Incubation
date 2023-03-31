@@ -1,0 +1,37 @@
+8) A kite is flown with a thread of length 200 meter. The thread is fully stretched and makes an angle of 60° with the horizontal, find the height of the kite above the ground.
+
+173 m
+100 m
+346 m
+141 m
+Hide Answer Workspace
+The Correctoption is(A)
+
+Answer with explanation:
+
+Apti Height and distance41
+Let height of the kite above the ground be AC = h.
+
+Length of thread, BC = 200 m
+
+Apti Height and distance42
+= 100 * √l3
+
+= 100 * 1.73
+
+= 173 m ( Option A)
+------------------------------------------------------------------------------------------
+10) What is the area of a square field whose side is 20 meters?
+
+300 sq. m.
+350 sq. m.
+400 sq. m.
+450 sq. m.
+Hide Answer Workspace
+Answer: C
+
+Explanation:
+
+The area of a square = (side) 2
+                                  = (20)2
+                                  = 400 sq. m.

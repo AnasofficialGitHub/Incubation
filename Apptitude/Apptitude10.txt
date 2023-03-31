@@ -1,0 +1,110 @@
+1.What percentage of numbers from  to  have  or  in the unit's digit?
+1,9,11,19,21,29,31,39,41,49,51,59,61,69.
+Hence, the required percentage is 20%.
+---------------------------------------------------------------------------------------------------------------------------------------------
+2.If 20% of a = b, then b% of 20 is the same as:
+A)20% of a
+
+B)200% of a
+
+C)4% of ar
+D)2% of a
+
+Answer: 4% of a
+----------------------------------------------------------------------------------------------------------------------------------------------
+3.Two numbers A and B are such that the sum of 5% of A and 4% of B is two-third of the sum of 6% of A and 8% of B. Find the ratio of A : B.
+A. 2 : 3
+
+B. 1 : 1
+
+C. 3 : 4
+
+D. 4 : 3
+
+Answer: Option D
+
+Solution(By Examveda Team)
+5%ofA+4%ofB=23(6%ofA+8ofB)⇒5100A+4100B=23(6100A+8100B)⇒120A+125B=125A+475B⇒(120−125)A=(475−125)B⇒1100A=175BAB=10075=43∴Requiredratio=4:3
+-----------------------------------------------------------------------------------------------------------------------------------------------
+4.In an election between two candidates, one got 55% of the total valid votes. 20% of the votes were invalid. If the total number of votes was
+ 7500, the number of valid votes that the other candidate got, was
+
+Correct option is A)2700)
+Valid votes = ( 
+100
+80
+​
+ ×7500)=6000
+
+Valid votes for 1 candidate = ( 
+100
+55
+​
+ ×6000)=3300
+
+Valid votes for another candidate = 6000−3300=2700
+-----------------------------------------------------------------------------------------------------------------------------------------------
+5.Three candidates in a election received 1136,7636 and 11628 votes respectively. What percentage of the total votes did the winning candidate 
+get?
+
+Correct option is D)57%)
+Total number of votes polled =(1136+7636+11628)=20400
+∴  Required Percentage 
+=( 
+20400
+11628
+​
+ ×100)% 
+=57%
+-----------------------------------------------------------------------------------------------------------------------------------------------
+6.Two tailors X and Y are paid a total of Rs 550 per week by their employer. If X is paid 120 percent of the sum paid to Y, how much is Y paid 
+per week?
+
+Correct option is B.250)
+
+Hence, the sum paid to y per week is 250 Rs.
+------------------------------------------------------------------------------------------------------------------------------------------------
+7.Gauri went to the stationery and bought things worth Rs 25 out of which 30 paise went on sales tax on taxable purchases If the tax rate was 6% 
+then what was the cost of the tax free items? 
+
+Correct option is C)
+Let the amount of taxable purchases be  Rs.x
+
+Given, 6% of x=30 paisa=30/100
+​
+ 
+
+⇒x=( 100/30 × 6/100 )=5
+
+∴ Cost  of  tax  free  items =Rs.[25−(5+0.30)]=Rs.19.70
+-----------------------------------------------------------------------------------------------------------------------------------------------
+8.Rajeev buys good worth Rs.6650. He gets a rebate of 6% on it. After getting the rebate, he pays sales tax@ 10%. Find the amount he will have
+ to pay for the goods.
+
+Correct option is A)Rs.6876.10
+Rebate=6%,MP=Rs.6650
+
+SP=94%×6650=Rs.6251
+
+Sales tax=10%
+
+Total amount Rajeev pays=10%×6251+6251=Rs.(625.1+6251)= Rs.6876.10.
+-----------------------------------------------------------------------------------------------------------------------------------------------
+9.The population of a town increased from 175000 to 262500 in a decade. The average percent increase of population per year is?
+
+Correct option is B)
+Percentage increase in population in 10 years = 
+175000/(262500−175000)×100=50%
+Thus, average increase in population per year = 5%
+------------------------------------------------------------------------------------------------------------------------------------------------
+10.When the time is 4:20, the angle between the hands of the clock is.
+ 
+Correct option is D.10)
+Angle traced minutes hand in 20 minutes =  
+20×360/60 =120∘
+ 
+The hour hand traces half a degree in one minute. Hence, angle traced by hour hand at 4 hour and 20 minutes = 
+4×30+ 20/2 =130 ∘
+ 
+Thus, angle between two hands = 130−120=10∘
+=================================================================================================================================================

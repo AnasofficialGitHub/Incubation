@@ -1,0 +1,173 @@
+1.Shyam decided to donate 15% of her salary to an orphanage. 
+On the day of donation he changed his mind and donated 
+Rs. 2,896 which was 90% of what she had decided earlier. 
+How much is Shyam’s salary ? 
+
+Correct Answer  : Rs. 21,452 
+Given: Percentage of salary decided to be donated to orphanage = 15% 
+Actual donation is Rs. 2896 
+which is 90% of what was dedided earlier Calculation: 
+Let Shyam's salary be Rs. x. Now, according to the question, 
+90% of 15% of x = Rs. 2896
+ ⇒ (9/10) × (3/20) × x = Rs. 2896 
+⇒ x = Rs. 21,451.85 ≈ Rs. 21,452 
+∴ The salary of Shyam is Rs. 21,452
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2.Jaya's attendance for first two semesters
+out of four was 60% and 70%, respectively,
+What is the minimum attendance required
+in third semester so that her average
+attendance will be 80% throughout four
+semesters? (Assume equal number of days
+among the four semesters)​
+Jaya's attendance for first two semesters out of four was 60% and 70%, respectively.
+
+To Find :
+
+Percentage of attendance in third & fourth semester to get an average of 80% overall
+
+Solution :
+
+•let the attendance required in third & fourth semester is x %
+
+•Average = sum of all observation/ Total Number of observation
+
+•Average = ( 60 + 70+ x + x )/4
+
+80 = ( 60 + 70+ x + x )/4
+
+320 = 130 + 2x
+
+2x = 320-130
+
+2x = 190
+
+x = 95
+
+•Hence , There should be 95% attendance in both third & fourth semester so, as to maintain an average of 80% in four semesters
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3. In a mixture, the ratio of the alchohol and water is 6 : 5. When 22 litre mixture are replaced by water, the ratio becomes 9 : 13. Find the quantity of water after replacement.
+ 54 litre 56 litre  58 litre 52 litre  None of these
+
+
+Correct Ans:52 litre
+Explanation:
+-----> Let alchohol = 6x, water = 5x
+-----> According to the question,
+-----> 6x â€“ 22 * (6/11) : 5x â€“ 22 * (5/11) + 22 = 9 : 13
+-----> 6x â€“ 12 : 5x â€“ 10 + 22 = 9 : 13
+-----> 13 (6x â€“ 12) = 9 (5x + 12)
+-----> 78x â€“ 156 = 45x + 108
+-----> 78x â€“ 45x = 156 + 108
+-----> 33x = 264
+-----> x = 8
+-----> Water after replacement = 5 * 8 â€“ 10 + 22 = 40 + 22 = 52 litre
+
+Hence, option D is correct.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+4. In a container containing a mixture of 60 litres, the ratio of water to spirit is 4: 1. How much spirit should be added to make the ratio 3: 2?
+ 20 litres 27 litres  16 litres 9 litres  31 litres
+
+
+Correct Ans:20 litres
+Explanation:
+Amount of mixture in the container = 60 litres
+Given, the ratio of water to spirit is 4: 1
+Therefore, Amount of water = 4/5 * 60 = 48
+Amount of spirit = 1/5 * 60 = 12
+Let the amount of spirit added be x
+Therefore, Amount of water/Amount of spirit = 3/2
+48/(12 + x) = 3/2
+96 = 36 + 3x
+3x = 96 - 36 = 60
+x = 60/3 = 20
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+5. Anu is working partner and Vidhya is sleeping partner in an organization. Anu puts 6000 and vidhya puts 5000. Anu receives 12.5% from profit for maintaining and running an organization. The rest is divided between according to their capital. What does vidhya get if the profit at the end of year is 880?
+ 415 350  505 445  None of these
+
+
+Correct Ans:350
+Explanation:
+---> Investment ratio = ( 6:5)
+
+---> Anuâ€™s extra profit = (12.5/100) * 880 = 110
+
+---> Now the profit remaining = 880-110 = 770
+
+---> Profit ratio = investment ratio = (6:5)
+
+---> Anuâ€™a profit = ( 6/11) * 770 = 420
+
+---> Total profit of anu = 420+110 = 530
+
+---> Therefore vidhyaâ€™s profit = 880-530 = 350
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+6. A can complete a work in 10 days, B in 12 days & C in 15 days. All of them began working together. But A left after 2 days of work and B 3 days before completion of the work. How long did the work last?
+ 7 10  8 6  None of these
+
+
+Correct Ans:7
+Explanation:
+Let the total work be 60. (LCM of 10, 12 & 15)
+Therefore efficiency of A working alone = 60/10 = 6 work per day
+Similarly efficiency of B working alone = 60/12 = 5 work per day
+& efficiency of C working alone = 60/15 = 4 work per day
+For the first 2 days all three worked.
+Therefore work completed by them in 2 days = 2 *(6+5+4) = 30 work
+For last 3 days C worked alone = 12 work
+Remaining work = 60 - (30+12) = 18 work
+This work was done by B+C = 18/(5+4) = 18/9 = 2 days
+Hence total time taken = 2 + 2+ 3 = 7 days
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+7. Anu is working partner and Vidhya is sleeping partner in an organization. Anu puts 6000 and vidhya puts 5000. Anu receives 12.5% from profit for maintaining and running an organization. The rest is divided between according to their capital. What does vidhya get if the profit at the end of year is 880?
+ 415 350  505 445  None of these
+
+
+Correct Ans:350
+Explanation:
+---> Investment ratio = ( 6:5)
+
+---> Anuâ€™s extra profit = (12.5/100) * 880 = 110
+
+---> Now the profit remaining = 880-110 = 770
+
+---> Profit ratio = investment ratio = (6:5)
+
+---> Anuâ€™a profit = ( 6/11) * 770 = 420
+
+---> Total profit of anu = 420+110 = 530
+
+---> Therefore vidhyaâ€™s profit = 880-530 = 350
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+9. 40 % of goods are sold at 10 % loss while the remaining is sold at 20 % profit. If there is total profit of Rs. 640, then the worth of goods sold is?
+ Rs. 8000 Rs. 9500  Rs. 8600 Rs. 9200  None of these
+
+
+Correct Ans:Rs. 8000
+Explanation:
+
+
+Given,
+(120 - x)/(x - 90) = (2/3)
+360 - 3x = 2x - 180
+540 = 5x
+x = 540/5 = 108
+Overall profit % = 8 %
+(8/100) * Cost price = 640
+Cost price = (640 * 100)/8 = Rs. 8000
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+10. A man sells calculator at the rate of â‚¹ 250 each. The cost price of each calculator is 86% of the selling price of that calculator. What amount of profit will be earned in 19 days if he sells seven calculators per day?
+ 4665 4565  4545 4655  None of these
+
+
+Correct Ans:4655
+Explanation:
+Selling price of one calculator = â‚¹ 250
+Cost price of one calculator = 250 * 86/100 = â‚¹ 215
+Profit = 250 - 215 = â‚¹ 35
+He earns â‚¹ 35 profit on one calculator.
+Hence, total profit earned in 19 days if he sold 7 calculators each day
+= 19*7*35 = â‚¹ 4655

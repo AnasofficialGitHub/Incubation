@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login Form</title>
+	</head>
+	<body background = "C:/Users/Administrator/Downloads/loginn.png">
+		<form>
+			<br>
+			<br><br>
+			<h1><center>Login</center></h1>
+			<h4><center>User Name : <input type="text" id="us" name="user_name" required/></center></h4>
+			<h4><center>Password &nbsp;&nbsp;: &nbsp;<input type="text" id = "psw" name="password"  id="ps"
+				pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&-+=()]).{8,20}"
+				title="Must have Capital letter , small letter and number with
+				minimum 8 letter and maximum 20 letters" required></center><h4>
+			<center><h5><input type="submit" name="OK" value="OK" onclick="hi(document.getElementById('us').value,document.getElementById('psw').value);"></h5></center>
+		</form>
+		<script>
+			function hi(name,pass){
+				var regex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}$/;
+				if(!regex.test(pass))
+					return;
+				else
+					alert("Login successfull\nhi "+name);
+			}
+		</script>
+	</body>
+</html>

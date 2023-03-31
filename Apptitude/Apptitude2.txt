@@ -1,0 +1,228 @@
+1) Average age of a group of 30 boys is 16 years. A boy of age 19 leaves the group and a new boy joins the group. If the new average age of the group is 15.8 years, find the age of the new boy.
+
+12 years
+13 years
+14 years
+15 years
+The correct answer is B
+
+Explanation:
+
+Let the age of new boy = X years
+
+Total age of 30 boys = 30*16 = 480 years
+
+As per question, if we minus age of boy who leaves the group and then add the age of boy who joins the group the new average becomes = 15.8 years.
+
+∴ Apti Average 21  = 15.8
+
+480 - 19 + X = 474
+
+X = 474 - 480 +19
+
+X = - 6 +19
+
+= 13 years
+-----------------------------------------------------------------------------------
+2.Given that 1+2+3+.. +9 = 45, find the value of (11+12+13+..+19)
+
+Answer: 135
+
+------------------------------------------------------------------------------------
+3) X and Y enter into a partnership for a year. 
+X invests Rs. 6000, and Y invests Rs. 8000. 
+After 4 months, they admit Z, who invests Rs. 9000.
+ If Y withdraws his contribution after 6 months, 
+how would they share a profit of Rs 1000 at the end of the year?
+
+
+350, 300, 350
+375, 250, 375
+400, 300, 300
+100, 600,300
+
+Answer: B
+
+Explanation:
+
+X's capital be C1 = 6000
+Y's capital be C2 = 8000
+Z's capital be C3 = 9000
+X's time be T1 = 12 months
+Y's time be T2 = 6 months
+Z's time be T3 = 8 months
+Profit = 1000
+
+The profit will be divided in the ratio:-
+
+(C1 * T1): (C2 * T2): (C3 * T3)
+(6000*12): (8000*6): (9000*8)
+i.e., 72000: 48000: 72000
+Or, 72:48:72
+Divide the whole equation by 24.
+The ratio will be 3: 2: 3
+Sum of the ratios will be 3+2+3= 8
+
+Apply formula:
+
+X's share = (X's ratio/ sum of all three ratios)* total profit
+Hence, X's share is (3/8) * 10000 = 375
+X's and Z's share are equal in ratio, so Z's share =375
+Y's share = 1000 - (A + B)'s share
+= 1000 - 750 = 250
+----------------------------------------------------------------------------------
+4.father age is seven times the age of son . 
+After 10 years father's age is 3 times the age of  son.
+ what is the age of father in present?
+
+Solution. Thus, the present age of son is 5 years and 
+that of father is 35 years.
+----------------------------------------------------------------------------------
+5) If it was Wednesday on March 1, 2006, 
+which day was it on March 1, 2002?
+
+Tuesday
+Friday
+Monday
+Sunday
+
+The Correct answer; option (B)
+
+Explanation:
+
+Total number of odd days between the years 2002 and 2006 =
+
+(2006 - 2002) + 1 = 5 odd days. The year 2004 is a leap year, it has two odd days. So, one extra odd day is added.
+
+So, if it was Wednesday on March 1, 2006, it would be (Wednesday - 5) Friday on March 1, 2002.
+-----------------------------------------------------------------------------------------------------------------
+6) The top of a 30 m high wall makes an angle of elevation of 60° with the top of a tower and makes an angle of depression of 45° with the bottom of the tower. Find the distance between tower and wall?
+
+27 m
+28 m
+29 m
+30 m
+
+The Correctoption is(D)
+
+Answer with explanation:
+
+Apti Height and distance32
+Let AD is the wall of height 30 m and BE is the tower and X be the distance between tower and wall.
+
+Apti Height and distance33
+X = 30 m (Option D)
+-----------------------------------------------------------------------------------------------------
+7) The cost price of 30 articles is equal to the selling price of 25 articles. What is the profit percentage in this transaction?
+
+20%
+18%
+15%
+13%
+
+The Correct answer is (A)
+
+Answer with explanation:
+
+Let the cost price of each article be Rs. 1
+
+∴ C.P. of 25 articles = Rs. 25
+
+S.P. of 25 articles = C.P. of 30 articles = Rs. 30
+
+Profit = Profit (S.P. - C.P.) = 30 -25 = 5
+
+Profit % = apti Profit and loss 12 ∗100 = 20 %
+   25
+Solution 2:
+
+Apply formula: apti Profit and loss 11
+ =30-25/25 ∗100=20%
+     
+----------------------------------------------------------------------------------
+8.Two trains of length 120 meters and 140 meters are moving in the 
+same direction on parallel tracks at speed of 82 km/hr and 64 km/hr. 
+At what time the first train will cross the second train?
+
+A.42 sec
+B.48 sec
+C.52 sec
+D.44 sec
+Answer C.
+Answer explanation
+C.Length of first train = 120 m
+Length of second train = 140 m
+Total distance covered by the both train =140+120 m = 260 m
+Speed of first train = 82 km/hr
+Speed of second train = 64 km/hr
+Relative speed = 82-64 = 18 km/hr = 18*5/18 m/s = 5 m/s
+Time = ?
+Speed = Distance/Time
+5 = 260/t
+T = 52 sec
+So the first train will cross the second train in 52 sec.
+So the correct answer is option C.
+---------------------------------------------------------------------------------------------
+9) A can do a job in 30 days. B alone can do the same job in 20 days.
+ If A starts the work and joined by B after 10 days, 
+in how many days the job will be done?
+15 days
+16 days
+17 days
+18 days
+The Correct answer is (D)
+
+Explanation:
+
+A's one day work =Apti Time and work 71
+
+A's ten-day work =Apti Time and work 72
+
+So the remaining work would be =Apti Time and work 73
+
+B's one day work =Apti Time and work 74
+
+A and B's one day work =Apti Time and work 75
+
+Apti Time and work 76of the job will be done by them in one day.
+
+So, the remaining jobApti Time and work 77= 8 days
+
+Therefore, the total number of days required to do the job would be = 10 + 8 = 18 days
+------------------------------------------------------------------------------------------
+10)The length of a rectangle is increased by 60%. 
+By what percent would the width be decreased so as to maintain the same 
+area?
+A. 3712%
+B. 60%
+C. 75%
+D. 120% 
+Answer
+Hint: Here we go through by first finding the original area by 
+letting the original length be 100 and also take the breadth be 100.
+ Then increase the length of the rectangle as suggested in the question 
+and assume that the breadth is decreasing at the rate of x and then 
+find the new area which is equal to the original area to 
+find the value of x.
+Complete step-by-step answer:
+Let length of rectangle =100 m
+And the breadth of rectangle =100 m
+As we know the area of the rectangle is (Length×Breadth).
+Therefor the original area 100×100=10000m2
+Here in the question it is given that the length of the rectangle is increased by 60%.
+First we find 60% of the length then add it to the original length to
+ find out the new length i.e. 100+60% of 100=100+60100×100=160m
+And we assume that the length is decreasing at the x%
+First we find x% of the breadth then subtract it to the original breadth 
+to find out the new breadth i.e. 100+x% of 100=100−x100×100=(100−x)m
+Therefore the new area=160×(100−x)
+According to the question the area should be same i.e.
+⇒160×(100−x)=10000⇒(100−x)=10000160⇒x=100−1252∴x=37.5%
+Therefore percent decrease in breadth is 37.5%.
+Hence option A is the correct answer.
+Note: Whenever we face such type of question the key concept for facing 
+the problem is whenever in the question data is not given only given 
+that the changes of percentage then let the original data as 100 for 
+easy solving of percentage. And then assume the result which we have to
+ find as a variable then apply the condition of question to find out
+ that variable.

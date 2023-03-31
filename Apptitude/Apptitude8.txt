@@ -1,0 +1,400 @@
+1.What is output of below code?
+
+int main()
+{
+char name[]="Cppbuz";
+int len;
+int size;
+len = strlen(name);
+size = size_of(name);
+printf("%d,%d",len,size);
+return 0;
+}
+(A) 6,6
+(B) 6,7
+(C) 7,7
+(D) 0,0
+
+Ans: B
+
+Hint:
+This is very important difference in size_of() and strlen() functions.
+ strlen() returns no of chracters in any string. 
+While size_of() operator returns the size which is 
+actually including '\0' (null) character, null character is inserted 
+at the end of all strings in C programming.
+==================================================================================
+2.int main()
+{
+    int a = 320;
+    char *ptr;
+    ptr =( char *)&a;
+    printf("%d",*ptr);
+    return 0;
+}
+A) 320
+(B) 60
+(C) 160
+(D) 64
+
+Ans: D
+
+Hint:
+To understand it you have to convert 320 to binary form which is 101000000,
+ (9 digits) Now code is typecasting this value to char*, which takes 8 bits;
+ so from the 9 digits ptr 
+will stor only 8 values (01000000) which comes 64.
+================================================================================
+3.#include "stdio.h"
+#include "stdlib.h"
+
+int main(int argc, char *argv[]) {	
+	 char buffer[4];
+	 itoa(123, buffer, 10);
+	 printf("%s", buffer);
+	 return 0;
+}
+
+(A) 1234
+(B) 12340
+(C) 123
+(D) 0
+
+Ans: C
+
+Hint:
+atoi() is converting buffer value to base 10
+================================================================================
+4.#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {	
+	int a = atoi("100");
+	printf("%d",a);
+	return 0;
+}
+A) 0
+(B) 1
+(C) 100
+(D) 3
+
+Ans: C
+
+Hint:
+atoi() is predefined function which convert string into numberic value
+=====================================================================================
+5.
+#define # @
+@include "stdio.h"
+
+int main()
+{
+ 	printf("CppBuzz.com");
+ 	return 0;
+}
+
+(A) CppBuzz.com
+(B) Nothing
+(C) Compilation Error
+(D) Depends on Compilor
+
+Ans: C
+
+Compiler
+======================================================================================
+6.Does this program get compiled successfully?
+
+#include stdio.h
+
+int main()
+{
+	printf("CppBuzz.com");
+	return 0;
+ 	
+}
+
+(A) Yes
+(B) No
+(C) Depends on Compiler
+
+Ans: B
+=================================================================================
+---------------------------------Apptitude------------------------------------------------------
+1) Sam and Joan are playing a tennis match. If the probability of Sam's win is 0.59, then find the probability of Joan's win. 
+
+A) 0.47 
+
+B) 0.36 
+
+C) 0.41 
+
+D) 0.25 
+
+Solution: 
+
+Let event A = Sam wins and event B = Joan wins. Then, 
+P(A) = 0.59 
+Since if Sam wins, Joan cannot win and if Joan wins, Sam cannot win, so we can say that the 
+events A and B are mutually exclusive. Other than these two events, there are 
+no any other possible outcomes. So, 
+P(A)+P(B) = 1 
+0.59+P(B) = 1 
+P(B) = 1-0.59 = 0.41 
+-----------------------------------------------------------------------------------------------
+2. Tickets numbered 1 to 20 are mixed up and then a ticket is drawn at random. What is the probability that the ticket drawn has a number which is a multiple of 3 or 5? 
+
+A) 1/2 
+
+B) 2/5 
+
+C) 8/15 
+
+D) 9/20 
+
+Solution: 
+
+Here, S = {1, 2, 3, 4, ...., 19, 20}. 
+Let E = event of getting a multiple of 3 or 5 = {3, 6 , 9, 12, 15, 18, 5, 10, 20}. 
+P(E) = n(E)/n(S) = 9/20. 
+---------------------------------------------------------------------------------------------------------------------------------------------
+3. The probability that Soumya will get marry within 365 days is 'a' and the probability that
+her colleague Alma get marry within 365 days is 'b'. Find the probability that only one of
+the two gets marry at the end of 365 days.
+A a-b-2ab
+B. a+b-2ab
+C. a-b+2ab
+Dab-a-b
+O O
+c
+2​
+
+2
+
+Given the probability that Soumya will get married within 365 days is 'a' and the probability that her colleague Alma getting married within 365 days is 'b'.
+
+What is probability?
+
+The area of mathematics known as probability deals with numerical representations of the likelihood that an event will occur or that a statement is true. An event's probability is a number between 0 and 1, where, roughly speaking, 0 denotes the event's impossibility and 1 denotes certainty.
+
+Now, P(A) = a, P(B) = b.
+
+We need to find 
+
+We know that 
+
+We substitute the values of P(A) and P(B) and we get
+
+
+
+Therefore, the correct option is option B.
+
+-----------------------------------------------------------------------------------------------------------------
+5.Five digit numbers can be formed of 1,3,5,7,9. What will be the sum of all the numbers.
+
+Correct option is C)
+Given digits : 1,3,5,7,9
+Number of digit =n=5
+Sum of digits =1+3+5+7+9=25
+Sum of all five digit numbers 
+=(Sum of n digits )(n−1)!(10 power n−1+10 power n−2+.......10 powwer 1+10 power 0)
+=25(4!)(10 * 10 * 10 * 10+10 * 10 * 10 +10 * 10+10+1)
+=25(24)(1111)
+=6666600
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+6) A college has 10 basketball players. A 5-member team and a captain will be selected out  of these 10 players. How many different selections can be made? 
+
+A) 1260 
+
+B) 210
+
+C) 10C6 * 6! 
+
+D) 10C5 * 6 
+
+Solution :
+
+A team of 6 members has to be selected from the 10 players. This can be done in 10C6 or 210 ways. 
+Now, the captain can be selected from these 6 players in 6 ways. 
+Therefore, total ways the selection can be made is 210*6 = 1260. 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+7)How many 3-letter words with or without meaning, can be formed out of the letters of the word LOGARITHMS if repetition of letters is not allowed?
+a. 720
+b. 420
+c. 5040
+d. None of these
+
+
+Hint: We start solving the problem by finding the total unique letters present in LOGARITHMS. We then find the total no. of ways to choose 3 letters from all the unique letters obtained from LOGARITHMS. We then find the total no. of ways to arrange these selected letters. We then multiply the total no. of ways to choose and total no. of ways to arrange the selected letters to get the required value.
+Complete step-by-step solution
+In word LOGARITHMS there are 10 unique letters (i.e A, G, H, I, L, M, O, R, S, T).
+Now we have to form a 3-letter word with or without meaning and it is given that repetition of letters is not allowed which means you can’t use the same letter more than one time to form 3-letter words.
+Suppose in this question if repetition is allowed then you can use any letter more one time to form 3-letter words.
+Now, we know that number of combinations of r objects chosen from n objects when repetition is not allowed is given by:
+nCr=n!r!(n−r)!
+-(1)
+Where n! is defined as
+n!=n×(n−1)×(n−2)×(n−3)×−×3×2×1
+So,
+3 - letters out of 10 unique letters can be selected in 10C3
+ ways. By using formula (1), we get
+⇒10C3=10!3!×(10−3)!.
+⇒10C3=10!3!×7!.
+In general, n distinct objects can be arranged in n!. Here we selected 3-letter out of 10 unique letters, and these selected letters can be arranged in 3!
+Total number of 3 letter word =10C3×3!
+⇒10C3×3!=10!3!×7!×3!
+.
+⇒10C3×3!=10!/3!×7!×/3!
+.
+⇒10C3×3!=10!7!
+.
+We know that n!=n×(n−1)×(n−2)×(n−3)!
+ -(2)
+So, using equation (2) and canceling 7! from numerator and denominator we get,
+⇒10!7!=10×9×8×7!7!.
+⇒10!7!=10×9×8.
+⇒10!7!=720.
+Hence, the no. of 3 letter words formed from the word LOGARITHMS without repetition is 720.
+Hence the correct option of this question is option (a).
+Note: We should not stop solving the problem after finding the total no. of ways to choose 3 letters, as arranging these letters differently will give us different words. We can also solve this problem by taking 3 empty boxes and check what will be the total favorable cases. Similarly, we can also expect problems to find the total no. of words with repetition allowed.
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+9)Half of 1 percent written as a decimal is
+
+Correct option is D)0.005
+Half of 1% in decimals
+It will be  
+2
+1
+​
+ ×1%= 
+2
+1
+​
+ × 
+100
+1
+​
+ 
+= 
+200
+1
+​
+ =0.005
+---------------------------------------------------------------------------------------------------------------------------------------
+8)The price of sugar having gone down by 10%, a consumer can buy 5 kg more sugar for Rs 270. The difference between the original and reduced price per kg is 
+
+Correct option is B)
+Sugar price is reduced by 10% as a result of which a customer can by 5kg more rice for Rs.270
+Say the price of rice per Kg is Rs.x
+Then for Rs.270 he could be  
+x
+270
+​
+  Kg of rice
+The price is reduced by 10% and the new price is Rs. 
+10
+9x
+​
+ .
+Then, now he can by 270/(9x/10) Kg of rice for Rs.270
+Given,
+10
+9x
+​
+ 
+270
+​
+ − 
+x
+270
+​
+ =5
+⇒ 
+x
+300
+​
+ − 
+x
+270
+​
+ =5
+⇒x=6
+∴   Original price is Rs.6 and the reduced price is Rs.5.4
+∴    difference is 60 paise (Option B).
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+4) A boy has nine trousers and 12 shirts. In how many different ways can he select a trouser and a shirt? 
+
+A) 21
+
+B) 12
+
+C) 9
+
+D) 108
+
+Solution :
+
+The boy can select one trouser in nine ways. 
+The boy can select one shirt in 12 ways. 
+The number of ways in which he can select one trouser and one shirt is 9 * 12 = 108 ways. 
+-----------------------------------------------------------------------------------------------------------------
+10).Mindy’s current age is 3 times that of her daughter, Cindy. 
+4 years ago, Mindy’s age was 4 times that of her daughter, 
+what will be Cindy’s age 5 years from now? *
+
+
+
+Answer:
+
+17 years
+
+Step-by-step explanation:
+
+Let us consider that Cindy's age is X year
+
+form statement we know that the current age of Mindy is 3 times of Cindy
+
+i.e X = 3x
+
+now 4 years ago
+
+=> x-4 = 3x-4
+
+Mindy's age was 4 times of Cindy
+
+it means
+
+=> 4(x-4) = 3x-4
+
+=> 4x-16 = 3x-4
+
+=> X = 12 years
+
+it means Cindy's current age is 12 years
+
+after 5 years age will be
+
+= 12+5 = 17
+-------------------------------------------------------------------------------------------------------------
+11) Out of 7 consonants and 4 vowels, how many words of 3 consonants and 2 vowels can be formed? 
+
+A) 24400 
+
+B) 21300 
+
+C) 210
+
+D) 25200
+
+Solution :
+
+Number of ways of selecting 3 consonants from 7= 7C3 
+Number of ways of selecting 2 vowels from 4= 4C2 
+Number of ways of selecting 3 consonants from 7 and 2 vowels from 4 
+= 7C3 × 4C2 
+=(7×6×5/3×2×1)×(4×3/2×1)=210 
+It means we can have 210 groups where each group contains total 5 letters (3 consonants and 2 
+vowels). 
+Number of ways of arranging 5 letters among themselves=5!=5×4×3×2×1=120 
+Hence, required number of ways=210×120=25200
+-----------------------------------------------------------------------------------------------------------------

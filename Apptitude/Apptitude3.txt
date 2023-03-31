@@ -1,0 +1,228 @@
+1) Three years ago, the average age of Anita, Priya, and Varsha was 27 years. If five years ago, the average age of Priya and Varsha was 20 years, find the present age of Anita.
+
+30
+40
+60
+25
+Answer: B
+
+Explanation:
+Sum of the present ages of Anita, Priya and Varsha = (27 x 3 + 3 x 3) years = 90 years.
+Sum of the present ages of Priya and Varsha = (20 x 2 + 5 x 2) years = 50 years.
+Anita's present age = (90 - 50) years = 40 years.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2) Which of the following numbers is a prime number?
+Play Video
+
+
+167
+213
+350
+437
+Hide Answer Workspace
+The Correct answer is (A)
+
+Answer with explanation:
+
+Step 1: Find a whole number 'X' for each number such that X2 > the number;
+
+132 > 167
+
+152 > 213
+
+192 > 350
+
+212 > 437
+
+Step 2: Get all the prime numbers which are less than 'X'.
+
+Prime numbers less than 13 are 2, 3, 5, 7, and 11
+
+Prime numbers less than 15 are 2, 3, 5, 7, 11, and 13
+
+Prime numbers less than 19 are 2, 3, 5, 7, 11, 13, and 17
+
+Prime numbers less than 21 are 2, 3, 5, 7, 11, 13, 17, and 19
+
+Step 3: Check divisibility of each number with prime numbers which are less than 'X'.
+
+167 is not divisible by any prime number
+
+213 is divisible by 3
+
+352 is divisible by 2 and 11
+
+437 is divisible by 19
+
+∴167 is the required prime number as it is not divisible by any prime number.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3) A, B, and C invest 63000, 56000, and 84000 respectively to start a business. After one year, the profit is distributed in the ratio of their investments. If C's share of profit is Rs.54000, find the total profit earned.
+
+135030
+130500
+145000
+None of these
+Answer: B
+
+Explanation:
+
+Let the total profit = x
+The ratio of investment = 63000: 56000: 84000
+=63:56:84
+On dividing by 7, we get 9:8:12
+Now, sum of the ratios = 29
+
+Apply formula:
+C's share = (C's ratio/ sum of all three ratios)* total profit
+C's share = (12/29) * x = 54000
+x= (54000*29)/12
+x= 130500
+
+Hence, the total profit = 130500
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+4) A motorboat travels 16 km in 2 hours against the flow of river and travels next 8 km along the flow of the river in 20 minutes. How long will it take motorboat to travel 48 km in still water?
+
+2.5 hours
+3 hours
+3.5 hours
+4 hours
+Hide Answer Workspace
+The correct answer is B
+
+Answer with the explanation:
+
+Speed = Apti Boat and streams 57
+
+Speed upstream = Apti Boat and streams 58 = 8 km/hr
+
+Speed downstream = Apti Boat and streams 59 = Apti Boat and streams 60 = 24 km/hr
+
+∴ Speed in still water = Apti Boat and streams 61 (speed downstream +speed upstream)
+
+= Apti Boat and streams 62 (24+8)=16 km/hr
+
+Required time = Apti Boat and streams 63
+
+= Apti Boat and streams 64 =3 hour
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+5) There are two towers. The first tower of height 60 m casts a shadow of length 100m. At the same time if the second tower casts a shadow of length 140 m, find its height?
+
+80 m
+84 m
+88 m
+90 m
+Hide Answer Workspace
+The Correctoption is(B)
+
+Answer with explanation:
+
+Apti Height and distance55
+Let the height of the second tower = X
+
+We know that the length of the shadow is directly proportional to the height of the tower.
+
+Apti Height and distance56
+X = 84 m (Option B)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+6) The profit percent gained if an object is sold at Rs 464 is equals to the loss percent when the object is sold at Rs 436. Find the cost price of this object?
+
+250
+400
+450
+500
+Hide Answer Workspace
+Answer: C
+
+Explanation:
+
+Apply formula:
+
+Profit = selling price - cost price
+Loss = cost price - selling price
+
+ATQ, Selling price in case of profit is 464
+Selling price in case of loss is 436
+
+And the loss % = profit %
+
+So, cost price - selling price = selling price - cost price
+Let cost price = x
+
+x- 436 = 464 - x
+2x= 464+436
+2x = 900
+x = 450
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+7) A train crosses a pole and a bridge of length 280 meters in 6 seconds and 20 seconds respectively. At what speed the train is running?
+
+62 km/hr
+65 km/hr
+70 km/hr
+72 km/hr
+The correct option is (D).
+
+Answer with explanation:
+
+Let the length of train is X meters and its speed Y m/s
+
+Apti Problem on trains 83
+
+Put the value of X from equation (1) to equation (2)
+
+Apti Problem on trains 84
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+8) 3 workers can do a piece of work in 20 days. If one of them works only for half time in a day, in how many days the work will be done?
+
+24 days
+20 days
+22 days
+23 days
+Hide Answer Workspace
+The Correct answer is (A)
+
+Explanation:
+
+3 men's one day work = 1
+                                  20
+
+One man works for half day, so his one day's work = 1    =    1
+                                                                          60∗2      120
+
+Sum of each man one day's work = 1    +    1   +    1    =    5   =   1
+                                                   60          60       120      120    24
+
+Therefore, they will do the work in 24 days
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+9) If the size of a tile is 9" by 9", how many tiles are required to cover a 12 ft. wide and 18 ft. long floor?
+
+32
+384
+216
+24
+Answer: B
+
+Explanation:
+
+Area Aptitude
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+10) Out of 7 constants and 4 vowels, how many words of 3 constants and 2 vowels can be formed?
+
+21020
+25200
+10500
+21400
+Answer: B
+
+Answer with the explanation:
+
+We can combine 3 consonants and 2 vowels out of 7 consonants and 4 vowels in a way
+
+7C3 * 4C2 = Apti Permutation and Combination = 210
+
+That means 210 groups having 3 consonants and 2 vowels.
+
+Each group consists of 5 words that mean the possible arrangement of the letters is 5!
+
+Or, 5! = 5*4*3*2*1 = 120 ways.
+
+Therefore, the required number of words = 210*120 = 25200.

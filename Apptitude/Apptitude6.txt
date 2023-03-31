@@ -1,0 +1,212 @@
+1) The average age of a group of 6 boys is 19. If the new average age after a boy joins the group is 21.28, find the age of new boy.
+
+Approx 23
+Approx 32
+Approx 35
+Approx 45
+Hide Answer Workspace
+Answer: C
+
+Explanation:
+Use Formula:
+Age of new body= New average + Number of boys initially * increase in average
+= 21.28 + 6*2.28
+=21.28 + 13.68
+= 34.96
+------------------------------------------------------------------------------------------------------------------------------------------
+2) Find the average of first 6 consecutive even numbers.
+
+6
+4
+0
+7
+Hide Answer Workspace
+Answer: D
+
+Explanation:
+The average of first n consecutive even numbers is given by:
+= n+1
+Here, n=6
+= 6+1
+= 7
+-----------------------------------------------------------------------------------------------------------------------------------------
+3) The difference between simple interest and compound interest on a sum of money for 1 year at 4% per 6 months is 4, what is the sum?
+
+Rs. 2100
+Rs. 2300
+Rs. 2500
+Rs. 3000
+Hide Answer Workspace
+The Correct answer is (C)
+
+Explanation:
+
+Let the sum = Rs. X
+
+t = 1 year = 2 half years (6 months)
+
+r = 4% for 6 months
+
+Apti Compound interest48
+
+Apti Compound interest48
+--------------------------------------------------------------------------------------------------------------------------------------------------
+4) A, B, and C enter into a partnership. A invests one-fourth of the capital for one-fourth of the time. B invests one-fifth of the capital for half of the time. C contributes the remaining capital for the whole time. How should they divide a profit of Rs 1140?
+Play Video
+
+150, 540, 870
+100, 160, 860
+100, 160, 880
+120, 170, 830
+Hide Answer Workspace
+Answer: C
+
+Explanation:
+
+Let capital is 1unit, and time is 1unit
+Apply the formula to calculate the profit ratio
+(C1 * T1): (C2 * T2): (C3 * T3)
+(¼ * ¼): (1/5 * ½): ((1-(1/4 + 1/5))*1)
+i.e., (1/16): (1/10): (1- (5+4)/20)
+1/16: 1/10: 11/20
+
+To calculate the investment ratio, take LCM of the denominators and multiply with each fraction.
+LCM of 16, 10, and 20 is 80
+Now, (80/16): (80/10): ((11*80)/20)
+
+We get the investment ratio: 5:8:44
+
+Total profit is 1140
+
+Apply formula:
+
+A's share = (A's ratio/ sum of all three ratios)* total profit
+
+A's share = (5/57)* 1140 = 100
+B's share = (8/57)*1140= 160
+C's share = 1140 - (100+160) = 880
+---------------------------------------------------------------------------------------------------------
+5) It was Saturday on January 1, 2005. Find the day of the week on January 1, 2010.
+Play Video
+
+Tuesday
+Friday
+Wednesday
+Sunday
+Hide Answer Workspace
+The Correct answer; option (B)
+
+Explanation:
+
+On December 31, 2004, it was Friday.
+
+Number of odd days from the year 2005 to the year 2009 = 1+1+1+2(leap year) +1 = 6 odd days
+
+∴On December 31, 2009, it was Thursday, so on January 1, 2010, it was Friday.
+-----------------------------------------------------------------------------------------------------------
+6) There are two towers. The first tower of height 60 m casts a shadow of length 100m. At the same time if the second tower casts a shadow of length 140 m, find its height?
+
+80 m
+84 m
+88 m
+90 m
+Hide Answer Workspace
+The Correctoption is(B)
+
+Answer with explanation:
+
+Apti Height and distance55
+Let the height of the second tower = X
+
+We know that the length of the shadow is directly proportional to the height of the tower.
+
+Apti Height and distance56
+X = 84 m (Option B)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+7) By selling a property for Rs 45000 a person incurs a loss of 10%. Find the selling price to gain the profit of 15 %?
+
+55000
+60000
+57500
+58000
+Hide Answer Workspace
+Answer: C
+
+Explanation:
+
+S.P = 45000
+Loss% = 10%
+
+Apply formula:
+
+C.P = (100)/ (100- L %)) * S.P
+
+C.P = (100/ (100-10))* 45000
+C.P= (100/90) * 45000
+C.P = 50000
+
+Now, to gain the profit of 15%:
+
+Apply formula:
+
+S.P = ((100+P %) /100) * C.P
+
+S.P = ((100+15)/100) * 50000
+S.P = (115/100)* 50000
+
+S.P = 57500
+--------------------------------------------------------------------------------------------------------
+8) A, B, and C undertakes to do work for Rs 707. A, and B together do 5/7 of the work and rest is done by C alone. How much should C get?
+
+100
+300
+205
+202
+Hide Answer Workspace
+Answer: D
+
+Explanation:
+
+Let the work = 7
+ATQ, the work done by (A+B) = 5
+That means work done by C = 2
+Now, (A+B+C) work for 707
+So, C's earning = [C's work done/ total work done] * total payment
+Hence, C's earning = [2/7]* 707 = 202
+------------------------------------------------------------------------------------------------------------------------------------------------------
+9) The length, width, and height of a room are 7 m, 8 m, and 9 m respectively. What is the total area of the walls?
+
+270 sq. m.
+260 sq. m.
+265 sq. m.
+255 sq. m.
+Hide Answer Workspace
+Answer: A
+
+Explanation:
+
+Area of the 4 walls of a room = 2 (Length + Breadth) * Height
+
+Given that, Length = 7 meters, Width or Breadth = 8 meters and Height = 9 meters
+
+So, the required area, A = 2 (7 + 8) * 9
+
+= 2 * 15 * 9
+
+= 270 sq. m.
+---------------------------------------------------------------------------------------------------------------------------------------------
+10) To obtain an annual income of Rs. 900 from a 9% stock at 90, the amount to be invested on stocks is:
+
+Rs. 12000
+Rs. 11000
+Rs. 10000
+Rs. 14000
+Hide Answer Workspace
+Answer: C
+
+Explanation:
+
+Since face value is not given, let it be Rs. 100
+As it is an 9% stock, income (dividend) per stock = Rs. 9
+Now, for an income of Rs. 9 the amount invested or the price of the stock = Rs. 100
+For an income of Rs. 900, the amount invested in buying the stocks = Rs.Apti Stocks and Shares* 900 = Rs. 10,000

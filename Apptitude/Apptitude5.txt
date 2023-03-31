@@ -1,0 +1,42 @@
+1) The average weight of P, Q and R is 45 kg. If the average weight of P and Q is 40 kg and that of Q and R is 43 kg, what is the weight of Q?
+
+32
+65
+67
+31
+Hide Answer Workspace
+Answer: D
+
+Explanation:
+Let P, Q, R represent their respective weights. Then, we have:
+P + Q + R = (45 x 3) = 135.... (i)
+P + Q = (40 x 2) = 80.... (ii)
+Q + R = (43 x 2) = 86.... (iii)
+Adding (ii) and (iii), we get: P + 2Q + R = 166.... (iv)
+Subtracting (i) from (iv), we get: Q = 31.
+-----------------------------------------------------------------------------------------------------------------------------
+2) If the two-third of three - fourth of a number is 34, what will be the 20% of that number?
+
+
+13.4
+13.6
+13.7
+14
+Answer: (b) 13.6
+
+Explanation: Let the number be X.
+
+According to the question,
+
+2/3 * 3/4 * X = 34
+
+6/12 * X = 34
+
+Or,
+
+1/2 * X = 34
+
+So, X = 68
+
+Now, 20% of 68 is = 68 * 20/100 = 13.6
+-----------------------------------------------------------------------------------------------------------------------

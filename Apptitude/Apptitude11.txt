@@ -1,0 +1,156 @@
+1. In March the price of a stock increase by 20 percent in April. it declined by 10 percent. If in may the price increase 25 percent by what percentage of the original March price has the stock increased in price from the start of May?
+​ANswer 15
+------------------------------------------------------------------------------
+2.Kiran travels to a place 300 km away at an average speed of 50 km/hr and 
+returns at 60 km/hr/  Find the approximate average speed of the whole journey.
+Answer : 54km/hr(approx)
+accurate : 54.54km/hr:
+-----------------------------------------------------------------------------
+3.How many five-digit numbers can be formed using the digits 5, 6, 7, 8, 9, 0 
+if no digits can be repeated
+
+(A) 64
+(B) 120
+(C) 240
+(D) 600
+(E) 720
+
+Given:
+• 5-digit numbers needs to be formed using the digits 5, 6, 7, 8, 9, and 0
+• Repetition of digits not allowed
+
+To find:
+• How many such numbers can be formed
+
+Approach and Working:
+We can find the possible cases by taking the number of options for each place.
+Considering the left-most digit as the 1st digit and right-most digit as the 5th or last digit,
+• No of ways 1st place can be filled = 5 [except 0]
+• No of ways 2nd place can be filled = 5 [all number except the 1st digit]
+• No of ways 3rd place can be filled = 4 [all number except the 1st two digits]
+• No of ways 4th place can be filled = 3 [all number except the 1st three digits]
+• No of ways 5th place can be filled = 2 [all number except the 1st four digits]
+Hence the total number of possible cases = 5∗5∗4∗3∗2
+5∗5∗4∗3∗2 = 600
+
+Hence, the correct answer is option D.
+-----------------------------------------------------------------------------
+4.Anirudh wants to cut a large rectangular board into small identical square pieces. If the board size is 18 inches by 30 inches,
+What is the least number of square pieces he can cut without wasting any of the board?​
+
+If we want to cut the rectangular board into square pieces that actually means that Anirudh needs to cut pieces that are equal in length and width. (In form of squares)
+
+“Without wasting any of the board” means that he needs to choose a side length that divides evenly into both 18 and 30. And that is the common factor of 18 and 30.
+
+“The least number of square pieces” means that he needs to choose the largest possible squares length of the side of the square.
+
+Hence,
+
+HCF of 18 and 30
+
+18 = 2 × 3²
+30 = 2 × 3 × 5
+HCF of 18 and 30 is 6
+
+If the side length is 6 m, then the width 18 m can be divided 3 times and the length 30 m can be divided 5 times.
+
+Thus,
+
+The least number of square pieces he can cut without wasting any of the board is:
+
+3 x 5 = 15
+-------------------------------------------------------------------------------
+5.The price of a phone call consists of a standard connection fee, which is constant, plus a per minute charge. A 10-minute call costs $2.90 and a 16-minute call costs $4.40. How much does a 13-minute call cost?
+
+(A) $3.55
+(B) $3.57
+(C) $3.58
+(D) $3.65
+(E) $3.77
+Note: In both cases Standard connection fee is a constant. So any any changes made it's due to call rate.
+
+Now, 2.9 is for 10 mins
+
+4.40 is for 16 mins
+
+Change = 1.5 is for 6 mins. So, what is the call rate for per min.
+
+1.5 / 6 = 15 /60 = 0.25
+
+Now find out the constant : 10*0.25 = 2.5
+
+So, standard connection rate = 2.90 - 2.05 = 0.40
+
+So charge for 13 mins : 13*0.25 + 0.4 = 3.25 + 0.4 = 3.65
+
+The best answer is D.
+-----------------------------------------------------------------------------
+6.Six swimmers A,B,C,D,E and F compete in a race. The outcome is as follows: 
+Exactly two swimmers finish ahead of B Only two swimmers separate E and D. 
+A is behind D and E. B is ahead of E, with one swimmer in between. 
+F is ahead of D Who stood fifth in the race?
+E stood fifth in the race.
+
+As per the given details, there are two swimmers between E and D with A finishing before E.
+F finishes first and D is between B and F.
+Since A is behind E, C finishes before E, and after B. Two swimmers between E and D are B and C.
+The swimmers finish in the order- F, D, B, C, E, A, from first to last.
+Answer : FDBCEA
+-----------------------------------------------------------------------------
+7.In a class of 25 students, every student takes either Hindi, Sanskrit, or French, 
+or two of the three, but no students take all three languages. 9 take Hindi, 
+7 take Sanskrit and 5 take exactly two languages. What is the number of students
+ who take French?​
+Answer:
+
+4
+
+Step-by-step explanation:
+
+number of students who take french are
+
+25- (9+7+5)
+
+= 25-21
+
+= 4 students
+----------------------------------------------------------------------------------------
+8.Nurse Kemp has worked more night shifts in a row than Nurse Rogers, who has 
+worked five. Nurse Miller has worked fifteen night shifts in a row, more than 
+Nurses Kemp and Rogers combined. Nurse Calvin has worked eight night shifts in 
+a row, less than Nurse Kemp. How many night shifts in a row has Nurse Kemp 
+worked?
+Correct option is B)
+Nurse Kemp has worked more shifts in a row than Nurse Calcin; 
+therefore, Kemp has worked more than eight shifts. The number of Kemp's shifts 
+plus the number of Rogers's shifts(five) cannot equal fifteen or more, the number of Miller's shifts. 
+Therefore, Kemp has worked nine shifts in a row(5+9=14).
+----------------------------------------------------------------------------------
+9.Four defensive football players are chasing the opposing wide receiver, who
+ has the ball. C is directly behind the ball carrier. A and B
+ are side by side behind C. D is behind A and B. 
+C tries for the tackle but misses and falls. B trips. Which defensive
+ player tackles the receiver?
+
+After all the switching was done, A was directly behind the receiver.
+ C and B had fallen. D remained in the rear.
+Answer : A
+-----------------------------------------------------------------------------------
+10.Fact 1: Robert has four vehicles.
+Fact 2: Two of the vehicles are red.
+Fact 3: One of the vehicles is a minivan.
+If the first three statements are facts, which of the following statements must also be a fact?
+I: Robert has a red minivan.
+II: Robert has three cars.
+III: Robert's favorite color is red.
+A. I only
+B. II only
+C. II and III only
+D. none of these is known fact
+
+
+Correct option is D)
+There is not enough information to support any of the statements. Robert is known to have a minivan, 
+but it is not known which of his vehicles is red. Robert may have a pickup or 
+sport utility vehicle, so the second statement cannot be supported. 
+There is no way to know if Robert's favorite color is red(statement III).
