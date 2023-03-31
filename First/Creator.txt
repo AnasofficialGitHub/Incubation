@@ -1,0 +1,25 @@
+Successfull form submission ( X )
+->input.<>==null
+->alert
+->disable
+->cancel submit 
+
+
+Deluge task
+
+    Fetches records from the specified report
+     Fetches the specified record from using its ID
+     Creates a record in the specified form
+     Updates records from the specified report with new values
+    Updates the specified record with new values
+
+Create a lookup field for
+1 many to one relation
+2 one to one relation
+3 one to many relation
+4 one to one relation
+
+create an application
+
+Create a list of interview candidates with auto-populating alphanumeric field 
+and send notifications using workflow for approved candidates
